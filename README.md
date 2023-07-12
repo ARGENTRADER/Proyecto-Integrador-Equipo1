@@ -14,4 +14,5 @@ Colaboramos en este proyecto:
 - Salvini Mariano Aldair (desarrollador y scrum master).
 
 Ante cualquier duda o consulta no dudes en comunicarte en privado con el scrum master.
+
 ¡Muchos éxitos en tu desarrollo!
