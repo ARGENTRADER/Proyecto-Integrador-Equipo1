@@ -1,0 +1,36 @@
+body {
+    background-color: #e4c47c;
+}
+
+* {
+    background-color: #e4c47c;
+}
+
+.btn-primary {
+    background-color: #1c3444;
+    
+}
+
+footer {
+    padding: 0%;
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Rosario', sans-serif;
+}
+
+#logo-header {
+    height: 40px;
+    padding: 10px;
+}
+
+header {
+    margin-top: 10px;
+}
+
+#main-div {
+    padding-top: 36px;
+}
+
+
+#logo-bitcoin {
+    height: 3px;
+}
