@@ -8,7 +8,7 @@ Colaboramos en este proyecto:
 - Arguello Ontiveros Matias Jorge (desarrollador),
 - Baldovino Agripina (desarrolladora)
 - Brito Ana Luz (desarrolladora)
-- García Martín Andrés Ignacio (desarrollador)
+- Martin García Andrés Ignacio (desarrollador)
 - Herrera Augusto Francisco (desarrollador),
 - La Manna Bethania Giselle (desarrolladora) y
 - Salvini Mariano Aldair (desarrollador y scrum master).
