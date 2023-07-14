@@ -1,14 +1,16 @@
 Comandos para trabajar con Github de manera colaborativa:
 
-- git pull origin develop (ubicado en la rama develop, este comando me trae todos los archivos de la rama develop del repositorio remoto a mi repositorio local. SIEMPRE que comiences a desarrollar ten\'e9s que hacer este comando para traerte todos los cambios del repositorio remoto)\par
-- git checkout augusto-herrera (con este comando me muevo a mi rama de desarrollo personal)\par
-- git merge develop (este comando lleva todos los archivos de la rama develop a mi rama de desarrollo personal)\par
-En este momento puedo comenzar a desarrollar en mi rama de desarrollo personal, es decir modificar todos los documentos a mi gusto. Una vez que termin\'e9 todo mi desarrollo hago:\par
-- git status (para conocer el estado de los archivos)\par
-- git add . (con este comando a\'f1ado todos los cambios, si, con el punto ".")\par
-- git commit -m "Mensaje de confirmaci\'f3n" (con este comando confirmo todos los cambios que realic\'e9 en mi rama de desarrollo)\par
-- git checkout develop (con este comando me muevo a la rama develop)\par
-- git merge augusto-herrera (este comando fusiona los archivos de la rama augusto-herrera y los archivos de la rama develop y los cambios se ven reflejados en la rama develop)\par
-Hasta este punto trabajamos todo de manera local. Ahora es tiempo de enviar mis cambios al repositorio remoto. Para ello:\par
-- git push -u (con este comando enviamos todos los cambios realizados de manera local en la rama develop a la rama develop del repositorio remoto).\par
+- git pull origin develop (ubicado en la rama develop, este comando me trae todos los archivos de la rama develop del repositorio remoto a mi repositorio local. SIEMPRE que comiences a desarrollar tenés que hacer este comando para traerte todos los cambios del repositorio remoto)
+- git checkout augusto-herrera (con este comando me muevo a mi rama de desarrollo personal)
+- git merge develop (este comando lleva todos los archivos de la rama develop a mi rama de desarrollo personal)
+En este momento puedo comenzar a desarrollar en mi rama de desarrollo personal, es decir modificar todos los documentos a mi gusto.
+Una vez que terminé todo mi desarrollo hago:
+- git status (para conocer el estado de los archivos)
+- git add . (con este comando añado todos los cambios, si, con el punto ".")
+- git commit -m "Mensaje de confirmación" (con este comando confirmo todos los cambios que realicé en mi rama de desarrollo)
+- git checkout develop (con este comando me muevo a la rama develop)
+- git merge augusto-herrera (este comando fusiona los archivos de la rama augusto-herrera y los archivos de la rama develop y los cambios se ven reflejados en la rama develop)
+Hasta este punto trabajamos todo de manera local. Ahora es tiempo de enviar mis cambios al repositorio remoto. Para ello:
+- git push -u (con este comando enviamos todos los cambios realizados de manera local en la rama develop a la rama develop del repositorio remoto).
+
 En el caso de que estos pasos/comandos no sean los correctos invito a la edición de este documento y su aclaración en el commit.
