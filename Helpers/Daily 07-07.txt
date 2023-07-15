@@ -24,3 +24,8 @@ Colores:
 .color3 \{ #048065 \};
 .color4 \{ #848484 \};
 .color5 \{ #8cccbc \};
+
+Cuando querramos utilizar color blanco, en lugar de utilizar el conocido #fff o #ffffff, vamos a utilizar el siguiente:
+#fcfbf4
+La justificación del uso de este color es que, en la naturaleza, no existen los colores blanco y negro en extremo, por lo que al ojo humano le cuesta asimilar el color #ffffff.
+Por ellos utilizamos el #fcfbf4, para una experiencia de usuario más agradable.
