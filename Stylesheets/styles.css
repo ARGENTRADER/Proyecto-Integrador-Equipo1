@@ -37,3 +37,18 @@ header {
     height: 70vh;
 }
 
+.buy-form {
+    background-color: #fcfbf4;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+
+
+input {
+    border-radius: 5px;
+    width: 20%;
+}
+
+
+
