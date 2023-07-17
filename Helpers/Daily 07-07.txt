@@ -1,0 +1,31 @@
+- Definir logo y paleta de colores
+- Lunes 10 20 hs. Daily.
+
+Colores:
+.color1 \{ #d9ad26 \};
+.color2 \{ #6CACe4 \};
+.color3 \{ #fff \};
+.color4 \{ ##1a1a1a \};
+
+.color1 \{ #574d4f \};
+.color2 \{ #ffffff \};
+.color3 \{ #969091 \};
+.color5 \{ #ffd952 \};
+
+
+- ESTE ES -:
+.color1 \{ #e4c47c \};
+.color2 \{ #99bbdb \};
+.color3 \{ #1c3444 \};
+.color5 \{ #fff \};
+- ESTE ES -
+
+.color2 \{ #b5ded2 \};
+.color3 \{ #048065 \};
+.color4 \{ #848484 \};
+.color5 \{ #8cccbc \};
+
+Cuando querramos utilizar color blanco, en lugar de utilizar el conocido #fff o #ffffff, vamos a utilizar el siguiente:
+#fcfbf4
+La justificación del uso de este color es que, en la naturaleza, no existen los colores blanco y negro en extremo, por lo que al ojo humano le cuesta asimilar el color #ffffff.
+Por ellos utilizamos el #fcfbf4, para una experiencia de usuario más agradable.

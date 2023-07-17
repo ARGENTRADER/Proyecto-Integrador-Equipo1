@@ -26,11 +26,6 @@ header {
     margin-top: 10px;
 }
 
-#main-div {
-    padding-top: 36px;
-}
-
-
 #logo-bitcoin {
     height: 3px;
 }
@@ -41,4 +36,25 @@ header {
     align-items: center;
     height: 70vh;
 }
+
+.buy-form {
+    background-color: #fcfbf4;
+    border-radius: 15px;
+}
+
+form {
+    padding: 15px;
+}
+
+input {
+    border-radius: 5px;
+    width: 30%;
+    background-color: #fcfbf4;
+}
+
+.buy-img {
+    height: 50px;
+}
+
+
 
