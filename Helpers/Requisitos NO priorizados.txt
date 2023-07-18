@@ -4,4 +4,7 @@ Requisitos NO priorizados:
 - Hacemos un master, dev y ramas
 - Generar un nombre de usuario aleatorio en el momento en que el usuario se registra por primera vez
 - Validación de mail en creación/ingreso de usuario (que el mail esté vinculado a una cuenta existente o bien sea un mail válido)
-- Validar que la contraseña sea correcta junto con el mail.
+- Validar que la contraseña sea correcta junto con el mail
+- Protocolo de seguridad: no vamos a compartir tu información
+- DISEÑO: unificar estilos y colores.
+- Activar el modo oscuro
