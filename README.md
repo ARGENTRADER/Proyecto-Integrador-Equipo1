@@ -6,12 +6,12 @@ Este proyecto se realiza con el fin de garantizar los conocimientos adquiridos e
 Colaboramos en este proyecto:
 - Alladio Julian (desarrollador),
 - Arguello Ontiveros Matias Jorge (desarrollador),
-- Baldovino Agripina (desarrolladora)
+- Baldovino Agripina (desarrolladora y tester)
 - Brito Ana Luz (desarrolladora)
 - García Martín Andrés Ignacio (desarrollador)
 - Herrera Augusto Francisco (desarrollador),
-- La Manna Bethania Giselle (desarrolladora) y
-- Salvini Mariano Aldair (desarrollador y scrum master).
+- La Manna Bethania Giselle (desarrolladora y tester) y
+- Salvini Mariano Aldair (desarrollador, tester y scrum master).
 
 Ante cualquier duda o consulta no dudes en comunicarte en privado con el scrum master.
 
