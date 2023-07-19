@@ -29,3 +29,8 @@ Cuando querramos utilizar color blanco, en lugar de utilizar el conocido #fff o 
 #fcfbf4
 La justificación del uso de este color es que, en la naturaleza, no existen los colores blanco y negro en extremo, por lo que al ojo humano le cuesta asimilar el color #ffffff.
 Por ellos utilizamos el #fcfbf4, para una experiencia de usuario más agradable.
+
+Colores Mati:
+amarillo (intentar utilizarlo solo para detalles): #e4c47c
+celeste: puede utilizarse para texto bordes, iconos: #99bbdb
+Color del Fondo! : #1a1a1a
