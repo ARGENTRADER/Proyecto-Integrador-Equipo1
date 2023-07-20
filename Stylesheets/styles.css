@@ -65,3 +65,7 @@ input {
 .table {
     margin-bottom: 0px;
 }
+
+.labels {
+    background-color: #fff;
+}

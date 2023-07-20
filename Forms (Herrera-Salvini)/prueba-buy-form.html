@@ -13,14 +13,12 @@
 </head>
 <body>
 
-  <header class="bg-primary">
+  <header class="bg-primary mb-5">
     <div class="container-fluid text-center">
       <img src="/Logos/LogoSinFondoWhite.png" alt="Logo de ARGENTRADER" class="img-fluid" id="logo-header">
     </div>
   </header>
 
-  <!--Desarrollo debajo de esto-->
-  <!--Colocar la clase centered-form al div ubicado inmediatamente debajo del main-->
   <main>
     <div class="container-fluid">
         <form class="buy-form mb-5">
@@ -29,61 +27,58 @@
                     <thead>
                         <tr>
                             <th scope="col">
-                                <img src="/Logos/icono-de-prueba-4.png" alt="imagen de un logo" class="buy-form buy-img">
+                                <img src="/Logos/icono-de-prueba-4.png" alt="imagen de un logo" class="labels buy-img">
                             </th>
                             <th scope="col" colspan="2">
-                                <p class="buy-form"><strong class="buy-form">BITCOIN</strong></p>
+                                <p class="labels"><strong class="labels">BITCOIN</strong></p>
                             </th>
                             <th scope="col">
-                                <p class="buy-form"><strong class="buy-form">BTC</strong></p>
+                                <p class="labels"><strong class="labels">BTC</strong></p>
                             </th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td>
-                                <label for="precio" class="buy-form">Precio:</label>
-                                <label id="precio-actual" class="buy-form">$1200</label>
+                                <label for="precio" class="labels">Precio:</label>
+                                <label id="precio-actual" class="labels">$1200</label>
                             </td>
                             <td colspan="2">
-                                <label for="cantidad" class="buy-form">Cantidad:</label>
-                                <input type="number" id="cantidad" name="cantidad">
+                                <label for="cantidad" class="labels">Cantidad:</label>
+                                <input type="number" id="cantidad" name="cantidad" class="labels">
                             </td>
                             <td>
-
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <label for="comision-broker" class="buy-form">Comisión del broker:</label>
+                                <label for="comision-broker" class="labels">Comisión del broker:</label>
                             </td>
                             <td colspan="2">
-                                <label id="porcentaje-comision" class="buy-form">1.5%</label>
+                                <label id="porcentaje-comision" class="labels">1.5%</label>
                             </td>
                             <td>
-                                <label id="comision-moneda-local" class="buy-form">$15000</label>
+                                <label id="comision-moneda-local" class="labels">$15000</label>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <label for="total-pagar" class="buy-form">Total a pagar (acciones):</label>
+                                <label for="total-pagar" class="labels">Total a pagar (acciones):</label>
                             </td>
                             <td colspan="2">
-                                <label id="total-pagar" class="buy-form">$1000</label>
+                                <label id="total-pagar" class="labels">$1000</label>
                             </td>
                             <td>
-
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <label for="total-pagar" class="buy-form">Total a pagar:</label>
+                                <label for="total-pagar" class="labels">Total a pagar:</label>
                             </td>
                             <td>
-                                <label id="total-pagar" class="buy-form">$100000</label>
+                                <label id="total-pagar" class="labels">$100000</label>
                             </td>
                             <td colspan="2">
-
                             </td>
                         </tr>
                     </tbody>
@@ -92,68 +87,6 @@
         </form>
     </div>
   </main>
-
-  <main>
-    <div class="container-fluid centered-form">
-      <form class="buy-form">
-        <div class="row mb-3 buy-form">
-            <div class="col-4 buy-form d-flex justify-content-center align-items-center">
-                <img src="/Logos/logo-de-prueba.png" alt="Logo de la empresa" class="buy-form buy-img">
-            </div>
-            <div class="col-4 buy-form d-flex justify-content-center align-items-center">
-                <p class="buy-form"><strong class="buy-form">BITCOIN</strong></p>
-            </div>
-            <div class="col-4 buy-form d-flex justify-content-center align-items-center">
-                <p class="buy-form"><strong class="buy-form">BTC</strong></p>
-            </div>
-        </div>
-
-        <div class="row mb-3 buy-form">
-            <div class="col-6 buy-form d-flex justify-content-center align-items-center">
-                <label for="precio" class="buy-form">Precio:</label>
-                <label id="precio-actual" class="buy-form">$1200</label>
-            </div>
-            <div class="col-6 buy-form ">
-                <label for="cantidad" class="buy-form">Cantidad:</label>
-                <input type="number" id="cantidad" name="cantidad">
-            </div>
-        </div>
-        
-        <div class="row mb-3 buy-form">
-            <div class="col-6 buy-form d-flex justify-content-center align-items-center">
-                <label for="comision-broker" class="buy-form">Comisión del broker:</label>
-            </div>
-            <div class="col-3 buy-form d-flex justify-content-center align-items-center">
-                <label id="porcentaje-comision" class="buy-form">1.5%</label>
-            </div>
-            <div class="col-3 buy-form d-flex justify-content-center align-items-center">
-                <label id="comision-moneda-local" class="buy-form">$15000</label>
-            </div>
-        </div>
-
-        <div class="row mb-3 buy-form">
-          <div class="col buy-form d-flex justify-content-center align-items-center">
-              <label for="total-pagar" class="buy-form">Total a pagar (acciones):</label>
-              <label id="total-pagar" class="buy-form">$1000</label>
-          </div>
-        </div>
-
-        <div class="row mb-3 buy-form">
-            <div class="col buy-form d-flex justify-content-center align-items-center">
-                <label for="total-pagar" class="buy-form">Total a pagar:</label>
-                <label id="total-pagar" class="buy-form">$100000</label>
-            </div>
-        </div>
-
-        <div class="d-flex justify-content-center text-center gap-3 mt-3 buy-form">
-          <button type="submit" class="btn btn-primary" class="buy-form">Confirmar</button>
-          <button type="button" class="btn btn-secondary" class="buy-form">Cancelar</button>
-        </div>
-      </form>
-    </div>
-  </main>
-
-  <!--Desarrollo sobre esto-->
 
   <footer class="text-white text-center py-1 fixed-bottom">
     <div class="container-fluid">
