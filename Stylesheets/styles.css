@@ -66,6 +66,36 @@ input {
     margin-bottom: 0px;
 }
 
+#tabla-cotizaciones td,
+#tabla-cotizaciones th {
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#navbar {
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin-top: 25px;
+    
+}
+
+.cotizacion-img{
+    background-color: #fff;
+}
+
 .labels {
     background-color: #fff;
 }
+
+.saldo-label {
+    position: fixed;
+    clear: both;
+    margin-top: 20px;
+    right: 13px;
+    background-color: #fcfbf4;
+    padding: 10px;
+    border-radius: 5px;
+    color: #333;
+    font-weight: bold;
+  }
