@@ -92,10 +92,8 @@ input {
 }
 
 #navbar {
-    background-color: #f0f0f0;
     padding: 10px;
     margin-top: 25px;
-    
 }
 
 .cotizacion-img{
@@ -116,4 +114,8 @@ input {
     border-radius: 5px;
     color: #333;
     font-weight: bold;
+}
+
+.navbar-toggler-icon, .navbar-toggler {
+    background-color: #fcfbf4;
 }
