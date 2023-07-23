@@ -115,3 +115,9 @@ input {
 .navbar-toggler-icon, .navbar-toggler {
     background-color: #fcfbf4;
 }
+
+.a-cotiza {
+    text-decoration: none;
+    color: #fff;
+    background-color: transparent;
+}
