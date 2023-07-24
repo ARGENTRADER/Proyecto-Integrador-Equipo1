@@ -121,3 +121,20 @@ input {
     color: #fff;
     background-color: transparent;
 }
+
+@media screen and (max-width: 370px){
+    
+    .a-forgot {
+        margin-bottom: 1px;
+    }
+
+    .div-forgot {
+        display: grid;
+        place-items: center;
+        margin: auto;
+    }
+}
+
+.a-forgot {
+    margin-top: 5px;
+}
