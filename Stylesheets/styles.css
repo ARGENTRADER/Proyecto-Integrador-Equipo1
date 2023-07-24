@@ -2,13 +2,12 @@ body {
     background-color: #1a1a1a;
 }
 
-* {
+.container-fluid {
     background-color: #1a1a1a;
 }
 
 .btn-primary {
     background-color: #1c3444;
-    
 }
 
 footer {
@@ -73,7 +72,8 @@ input {
     vertical-align: middle;
 }
 
-    /* Estilo para centrar y dar separación a los botones en la última fila */
+/* Estilo para centrar y dar separación a los botones en la última fila */
+
 .centered-cell {
     text-align: center;
     vertical-align: middle;
@@ -137,4 +137,8 @@ input {
 
 .a-forgot {
     margin-top: 5px;
+}
+
+header {
+    background-color: #1a1a1a;
 }
