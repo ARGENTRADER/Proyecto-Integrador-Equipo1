@@ -1,0 +1,2 @@
+Archivo de texto complementario de archivo "Ayuda Github Push":
+Si a alguno le pasa este error es porque está queriendo hacer un push y no posee la última versión del repo remoto, por lo que primero debe hacer un "git pull" para traerse la última versión del repo remoto, luego hacer "git pull".

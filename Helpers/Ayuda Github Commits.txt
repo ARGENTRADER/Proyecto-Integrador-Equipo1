@@ -1,0 +1,38 @@
+Una vez que tenemos clonado nuestro repositorio debemos tener en cuenta lo siguiente: SIEMPRE que vayamos a comenzar a trabajar en cambios para la rama develop debemos hacerlos primero en nuestra rama y lo más importante y lo primero que debemos hacer antes de comenzar a desarrollar es traer los posibles cambios del repositorio remoto, de esta forma comenzaremos a desarrollar con la versión actualizada del repositorio remoto (última versión con últimos cambios). Para traer estoy cambios a nuestro repositorio local utilizamos los siguientes comandos: 
+
+git checkout develop (con este comando nos movemos a la rama develop, dentro de nuestro repositorio local) 
+
+git pull origin (con este comando traeremos la última versión del repositorio remoto a nuestro repositorio local, por lo que posiblemente veamos actualizaciones en nuestra rama develop local) 
+
+git checkout nombre-apellido (con este comando nos movemos a nuestra rama de desarrollo personal, donde "nombre-apellido" debe ser reemplazado por tu nombre y apellido) 
+
+git merge develop (con este comando, todas las actualizaciones traídas anteriormente a nuestra rama develop, pasaran a estar en nuestra rama de desarrollo personal, por lo que ahora mismo estamos listos para comenzar a desarrollar). 
+
+En este punto, nuestra rama de desarrollo personal (es decir, nuestra rama "nombre-apellido) posee todos los cambios subidos al repositorio remoto por todos los integrantes, es decir, tenemos la última versión de nuestro proyecto.
+Ahora podemos comenzar a hacer todos los cambios que deseemos: editar un documento HTML, uno CSS, un README, lo que fuera. 
+
+Luego de realizar todos mis cambios y verificar que todo lo que hice está correcto, debo subir al repositorio remoto mis cambios o, en otras palabras, hacer las confirmaciones pertinentes (commits). Para ello utilizamos los siguientes comandos: 
+
+NOTA: es MUY importante que al finalizar tu trabajo te asegures de continuar en tu rama de desarrollo personal. 
+
+Ubicado dentro de tu rama de desarrollo personal: 
+
+git add . (con este comando añadimos TODOS los cambios realizados dentro de nuestro repositorio local. TODOS significa todos los cambios en todas las ramas de tu repositorio local, por eso es muy importante que cada uno trabaje en su propia rama. Y si, el comando es git add y el punto "."). 
+
+git commit -m "Comentario que acompañará a la confirmación" (con este comando confirmamos los cambios añadidos anteriormente. Es muy importante añadir un comentario conciso y descriptivo acerca de los cambios realizados, es lo ideal ser breve. Si no se añade un comentario se genera un error y no se confirman los cambios). 
+
+Hasta este punto tenemos todos los cambios añadidos y confirmados, PERO dentro de nuestra rama de desarrollo personal dentro de nuestro repositorio local, ahora debemos llevarlos a la rama develop del repositorio remoto. Para ello: 
+
+git checkout develop (con este comando volvemos a ubicarnos dentro de la rama develop dentro de nuestro repositorio local). 
+
+git merge nombre-apellido (con este comando fusionamos los contenidos de nuestra rama de desarrollo personal con los contenidos de la rama develop, o dicho en otras palabras, añadimos a la rama develop todos los cambios realizados en nuestra rama de desarrollo personal). 
+
+Ahora sólo resta subir los cambios al repositorio remoto, para ello: 
+
+NOTA: en este punto podes corroborar estar ubicado en la rama develop. 
+
+git push -u (con este comando se envían todos los cambios que primero realizaste en tu rama de desarrollo personal, los cuales luego fusionaste y alojaste en la rama develop en tu repositorio local) 
+
+Ahora sólo restaría que ingreses a github.com, ingreses con tu cuenta de usuario, ingreses a nuestra organización, a nuestro repositorio, te ubiques en la rama develop y visualices si los cambios se efectuaron correctamente. 
+
+Espero esto te sirva de ayuda.

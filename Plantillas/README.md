@@ -1,0 +1,1 @@
+El documento HTML, ubicado dentro de esta carpeta, llamado "template.html" es una plantilla con los elementos básicos que deben contener todas y cada una de las páginas que compongan a nuestro servicio web.
