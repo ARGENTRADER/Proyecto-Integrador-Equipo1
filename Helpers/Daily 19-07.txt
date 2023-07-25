@@ -1,0 +1,12 @@
+Conclusiones:
+- Tamaño de header y footer: los definimos los testers. Header acompaña al usuario a medida que scrollea (estático), el footer se mantiene al pie de la página, no se mueve.
+- Paleta de colores (por este Sprint):
+Amarillo (intentar utilizarlo solo para detalles): #e4c47c
+Celeste: puede utilizarse para texto bordes, iconos: #99bbdb
+Color del fondo: #1a1a1a
+- Navbar: la hacemos por fuera del header
+- Líder de diseño: Matías Arguello 
+- Landing-page: todos los integrantes le envían su fragmento de código HTML a Mati y él unifica, aplica el web responsive y gestiona los commits del equipo encargado de la tarea
+- Añadir "Cerrar sesión" al menú hamburguesa del inversor dentro del broker (o sea dentro de la página, NO landing-page)
+- Formularios: estilo definido por Mariano (sólo por este Sprint) quien se encarga de refactorizar todos como tester
+- Respetar paleta de colores.

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ARGENTRADER - Cotizaciones</title>
+  <!--Pantalla principal (broker)-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/Stylesheets/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand&family=Rosario:wght@500&display=swap" rel="stylesheet">
+  <link rel="icon" href="/Logos/argentrader-website-favicon-color.png">
+</head>
+<body>
+
+  <header class="bg-primary sticky-top">
+    <div class="container-fluid text-center">
+      <img src="/Logos/LogoSinFondoWhite.png" alt="Logo de ARGENTRADER" class="img-fluid" id="logo-header">
+    </div>
+  </header>
+    
+    <div class="row">
+      <nav class="navbar navbar-expand-lg" id="navbar">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link text-white" href="micuenta.html">Mi cuenta</a>
+              <a class="nav-link text-white" href="/Forms (García-Salvini)/mi-portfolio.html">Mi portafolio</a>
+              <a class="nav-link text-white" href="ajustes.html">Ajustes</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  
+    <main>
+      <div class="row">
+      <div class="container-fluid">
+        <form class="buy-form mt-5">
+          <div class="table-responsive">
+            <table class="table" id="tabla-cotizaciones">
+            <tbody>
+            <tr>
+              <th scope="col">Símbolo</th>
+              <th scope="col">Nombre</th>
+              <th scope="col">Último operado</th>
+              <th scope="col">Cantidad compra diaria</th>
+              <th scope="col">Precio compra actual</th>
+              <th scope="col">Precio venta actual</th>
+              <th scope="col">Cantidad venta diaria</th>
+              <th scope="col">Apertura</th>
+              <th scope="col">Mínimo diario</th>
+              <th scope="col">Máximo diario</th>
+              <th scope="col">Último cierre</th>
+              <th scope="col">Gráfico</th>
+              <th scope="col"></th>
+                    
+            </tr>
+            <tr>
+              <td><img src="/Logos/logo-de-prueba.png" alt="" class="img-fluid icon"></td>
+              <td>Empresa</td>
+              <td>XXXXXX</td>
+              <td>XXXXXX</td>
+              <td>XXXXXX</td>
+              <td>XXXXXX</td>
+              <td>XXXXXX</td>
+              <td>XXXXXX</td>
+              <td>XXXXXX</td>
+              <td>XXXXXX</td>
+              <td>XXXXXX</td>
+              <td><img src="/Logos/cotizacion-prueba.svg" alt="" class="img-fluid cotizacion-img"></td>
+              <td class="centered-cell">
+                <button class="btn btn-primary" onclick="location.href='./Forms (Herrera-Salvini)/prueba-buy-form.html'"><a href="/Forms (Herrera-Salvini)/prueba-buy-form.html" class="a-cotiza">Comprar</a></button>
+              </td>
+            </tr>
+            <tr>
+              <td><img src="/Logos/icono-de-prueba-2.png " alt="" class="img-fluid icon"></td>
+              <td>Empresa</td>
+              <td>XXXXXX</td>
+              <td>XXXXXX</td>
+              <td>XXXXXX</td>
+              <td>XXXXXX</td>
+              <td>XXXXXX</td>
+              <td>XXXXXX</td>
+              <td>XXXXXX</td>
+              <td>XXXXXX</td>
+              <td>XXXXXX</td>
+              <td><img src="/Logos/cotizacion-prueba.svg" alt="" class="img-fluid cotizacion-img"></td>
+              <td class="centered-cell">
+                <button class="btn btn-primary"><a href="/Forms (Herrera-Salvini)/prueba-buy-form.html" class="a-cotiza">Comprar</a></button>
+              </td>
+            </tr>
+            <tr>
+              <td><img src="/Logos/icono-de-prueba-3.png " alt="" class="img-fluid icon"></td>
+              <td>Empresa</td>
+              <td>XXXXXX</td>
+              <td>XXXXXX</td>
+              <td>XXXXXX</td>
+              <td>XXXXXX</td>
+              <td>XXXXXX</td>
+              <td>XXXXXX</td>
+              <td>XXXXXX</td>
+              <td>XXXXXX</td>
+              <td>XXXXXX</td>
+              <td><img src="/Logos/cotizacion-prueba.svg" alt="" class="img-fluid cotizacion-img"></td>
+              <td class="centered-cell">
+                <button class="btn btn-primary"><a href="/Forms (Herrera-Salvini)/prueba-buy-form.html" class="a-cotiza">Comprar</a></button>
+              </td>
+            </tr>
+            </tbody>
+            </table>
+          </div>
+        </form>
+      </div>
+      </div>
+    </main>
+
+    <div class="saldo-label">Saldo disponible: $500000ARS </div>
+
+  <footer class="text-white text-center py-1 fixed-bottom">
+    <div class="container-fluid">
+      <p>ARGENTRADER TM™</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
