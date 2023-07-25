@@ -312,7 +312,7 @@ body {
     padding: 20px;
     text-align: center;
 }
-.contenedor {
+.contenedor{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -330,6 +330,7 @@ body {
     gap: 40px;
     font-size: 20px;
     color: #e4c47c;
+    flex-wrap: wrap;
 }
 .imgfondo img {
     height: 90px;
@@ -373,12 +374,22 @@ footer {
     height: auto; 
     margin-bottom: 15px; 
 }
+.mod-b div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.mod-b div p{
+    align-self: end;
+}
 @media (min-width: 449px) and (max-width: 900px) {
     .txt-primer-bloque img{
         height: 40px;
     }
 }
-@media (min-width: 300px) and (max-width: 800px) {
+@media (min-width: 300px) and (max-width: 850px) {
     .txt-primer-bloque{
         width: 100%;
         margin-left: -250px;
@@ -386,6 +397,44 @@ footer {
     }
     .img-1-primer-bloque{
         visibility: hidden;
+    }
+    .porque p:first-child{
+        font-size:xx-large;
+        text-align: center;
+        text-justify: distribute;
+    }
+    .container {
+        gap: 20px;
+    }
+    .mod-a img{
+        visibility: hidden;
+    }
+    .txt-academia{
+        width: 100%;
+       position: absolute;
+       right: auto;
+       flex-wrap: wrap;
+       padding-inline: 10px;
+    }
+    .mod-b div{
+        flex-direction: column;
+        justify-content: center;
+        padding-inline: 5px;
+    }
+
+    .mod-b p{
+       text-align: center;
+    }
+    .imgfondo{
+        flex-direction: column;
+    }
+    .flecha-derecha{
+      transform: rotate(90deg);
+      font-size: 100px;
+    }
+    .logofooter{
+        height: 70%;
+        width: 100%;
     }
 }
 @media (min-width: 300px) and (max-width: 450px) {
@@ -396,6 +445,9 @@ footer {
  .txt-primer-bloque img{
     height: 15px;
 }   
+.txt-academia h2{
+    font-size: 40px;
+}
 
 }
 
