@@ -22,7 +22,9 @@ body {
     font-size: 15px;
     background-color: #1a1a1a;
     padding: 15px;
+    /* Comento el gap porque se renderiza mejor el menú hamburguesa
     gap: 100px;
+    */
     position: sticky;
     opacity: 1;
     min-height: 30px;
