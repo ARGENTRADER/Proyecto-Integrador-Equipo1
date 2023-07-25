@@ -370,3 +370,26 @@ footer {
     height: auto; 
     margin-bottom: 15px; 
 }
+@media (min-width: 449px) and (max-width: 900px) {
+    .txt-primer-bloque img{
+        height: 40px;
+    }
+}
+@media (min-width: 300px) and (max-width: 749px) {
+    .txt-primer-bloque{
+        margin-left: -250px;
+    }
+    .img-1-primer-bloque{
+        visibility: hidden;
+    }
+}
+@media (min-width: 300px) and (max-width: 450px) {
+ .txt-primer-bloque{
+    width: 50%;
+    gap: 100px;
+ }
+ .txt-primer-bloque img{
+    height: 15px;
+}   
+
+}
