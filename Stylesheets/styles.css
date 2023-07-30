@@ -148,8 +148,16 @@ header {
     text-decoration: none;
 }
 
-.bd-example :where(div, h5, p, ol) {
-    background-color: tomato;
+.bd-example :where(div, h4, p, ol) {
+    background-color: transparent;
+}
+
+.bd-example :where(ol) {
+    margin-bottom: 0px;
+}
+
+.bd-example :where(.carousel-caption) {
+    padding: 0px;
 }
 
 .carousel-item {
@@ -160,12 +168,20 @@ header {
 
 .carousel-item img {
     height: 100%;
-    width: 100px;
+    max-width: 500px;
     object-fit: cover;
+    padding: 0px;
+    border-radius: 20px;
 }
 
 @media screen and (max-width: 768px) {
     .carousel-item :where(p) {
         display: none;
-    }       
+    }    
+}
+
+@media screen and (max-width: 440px) {
+    .carousel-item {
+        height: 400px;
+    }
 }
