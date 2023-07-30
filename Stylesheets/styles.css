@@ -147,3 +147,11 @@ header {
 #a-none {
     text-decoration: none;
 }
+
+.carousel-img {
+    height: 500px;
+}
+
+.bd-example :where(div, h5, p, img, ol) {
+    background-color: tomato;
+}
