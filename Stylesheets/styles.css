@@ -163,7 +163,6 @@ header {
 .carousel-item {
     height: 500px;
     overflow: hidden;
-    width: 100px;
 }
 
 .carousel-item img {
@@ -180,8 +179,43 @@ header {
     }    
 }
 
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 551px) {
+    .carousel-item {
+        height: 450px;
+        width: 450px;
+    }
+    .carousel-item img {
+        max-width: 450px;
+    }
+}
+
+
+@media screen and (max-width: 511px) {
     .carousel-item {
         height: 400px;
+        width: 400px;
+    }
+    .carousel-item img {
+        max-width: 400px;
+    }
+}
+
+@media screen and (max-width: 451px) {
+    .carousel-item {
+        height: 350px;
+        width: 350px;
+    }
+    .carousel-item img {
+        max-width: 350px;
+    }
+}
+
+@media screen and (max-width: 351px) {
+    .carousel-item {
+        height: 250px;
+        width: 250px;
+    }
+    .carousel-item img {
+        max-width: 250px;
     }
 }
