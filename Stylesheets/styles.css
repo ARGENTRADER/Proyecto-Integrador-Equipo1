@@ -148,9 +148,15 @@ header {
     text-decoration: none;
 }
 
-.bd-example :where(div, h4, p, ol) {
+.bd-example :where(h4, p, ol, .carousel-caption) {
     background-color: transparent;
 }
+
+.bd-example :where(.carousel) {
+    background-color: #1a1a1a;
+}
+
+
 
 .bd-example :where(ol) {
     margin-bottom: 0px;
@@ -210,6 +216,16 @@ header {
     }
 }
 
+@media screen and (max-width: 411px) {
+    .carousel-item {
+        height: 300px;
+        width: 300px;
+    }
+    .carousel-item img {
+        max-width: 300px;
+    }
+}
+
 @media screen and (max-width: 351px) {
     .carousel-item {
         height: 250px;
@@ -218,4 +234,10 @@ header {
     .carousel-item img {
         max-width: 250px;
     }
+    .carousel-item :where(h4) {
+        font-size: 20px;
+        margin-bottom: 0px;
+    }
 }
+
+/*Quitar blanco del fondo de los elementos de landing*/
