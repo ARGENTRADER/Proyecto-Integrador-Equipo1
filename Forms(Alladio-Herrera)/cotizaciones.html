@@ -29,7 +29,7 @@
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
               <a class="nav-link text-white" href="micuenta.html">Mi cuenta</a>
-              <a class="nav-link text-white" href="/Forms (García-Salvini)/mi-portfolio.html">Mi portafolio</a>
+              <a class="nav-link text-white" href="/Forms(García-Salvini)/mi-portfolio.html">Mi portafolio</a>
               <a class="nav-link text-white" href="ajustes.html">Ajustes</a>
             </div>
           </div>
@@ -38,12 +38,11 @@
     </div>
   
     <main>
-      <div class="row">
-      <div class="container-fluid cotizaciones-container">
-        <form class="buy-form mt-5">
+      <div class="container-fluid">
+        <form class="buy-form mb-5">
           <div class="table-responsive">
             <table class="table" id="tabla-cotizaciones">
-            <tbody>
+            <thead>
             <tr>
               <th scope="col">Símbolo</th>
               <th scope="col">Nombre</th>
@@ -57,9 +56,10 @@
               <th scope="col">Máximo diario</th>
               <th scope="col">Último cierre</th>
               <th scope="col">Gráfico</th>
-              <th scope="col"></th>
-                    
+              <th scope="col"></th> 
             </tr>
+            </thead>
+            <tbody>
             <tr>
               <td><img src="/Logos/logo-de-prueba.png" alt="" class="img-fluid icon"></td>
               <td>Empresa</td>
@@ -74,7 +74,7 @@
               <td>XXXXXX</td>
               <td><img src="/Logos/cotizacion-prueba.svg" alt="" class="img-fluid cotizacion-img"></td>
               <td class="centered-cell">
-                <button class="btn btn-primary" onclick="location.href='./Forms (Herrera-Salvini)/prueba-buy-form.html'"><a href="/Forms (Herrera-Salvini)/prueba-buy-form.html" class="a-cotiza">Comprar</a></button>
+                <button class="btn btn-primary"><a href="/Forms(Herrera-Salvini)/prueba-buy-form.html" class="a-cotiza">Comprar</a></button>
               </td>
             </tr>
             <tr>
@@ -91,7 +91,7 @@
               <td>XXXXXX</td>
               <td><img src="/Logos/cotizacion-prueba.svg" alt="" class="img-fluid cotizacion-img"></td>
               <td class="centered-cell">
-                <button class="btn btn-primary"><a href="/Forms (Herrera-Salvini)/prueba-buy-form.html" class="a-cotiza">Comprar</a></button>
+                <button class="btn btn-primary"><a href="/Forms(Herrera-Salvini)/prueba-buy-form.html" class="a-cotiza">Comprar</a></button>
               </td>
             </tr>
             <tr>
@@ -108,7 +108,7 @@
               <td>XXXXXX</td>
               <td><img src="/Logos/cotizacion-prueba.svg" alt="" class="img-fluid cotizacion-img"></td>
               <td class="centered-cell">
-                <button class="btn btn-primary"><a href="/Forms (Herrera-Salvini)/prueba-buy-form.html" class="a-cotiza">Comprar</a></button>
+                <button class="btn btn-primary"><a href="/Forms(Herrera-Salvini)/prueba-buy-form.html" class="a-cotiza">Comprar</a></button>
               </td>
             </tr>
             </tbody>
@@ -116,12 +116,11 @@
           </div>
         </form>
       </div>
-      </div>
     </main>
 
     <div class="saldo-label">Saldo disponible: $500000ARS </div>
 
-  <footer class="text-white text-center py-1 fixed-bottom">
+  <footer class="text-white text-center py-1">
     <div class="container-fluid">
       <p>ARGENTRADER TM™</p>
     </div>

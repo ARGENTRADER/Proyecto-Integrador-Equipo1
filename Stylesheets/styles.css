@@ -1,5 +1,12 @@
+html {
+    min-height: 100%;
+    position: relative;
+}
+
 body {
     background-color: #1a1a1a;
+    margin: 0;
+    margin-bottom: 40px;
 }
 
 .container-fluid {
@@ -15,6 +22,10 @@ footer {
     font-family: 'Quicksand', sans-serif;
     font-family: 'Rosario', sans-serif;
     background-color: #1a1a1a;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
 }
 
 #logo-header {
@@ -64,6 +75,11 @@ input {
 
 .table {
     margin-bottom: 0px;
+    max-width: 100%;
+}
+
+.table-reponsive {
+    max-width: 100%;
 }
 
 #tabla-cotizaciones td,
@@ -246,3 +262,4 @@ header {
 }
 
 /*Quitar blanco del fondo de los elementos de landing*/
+
