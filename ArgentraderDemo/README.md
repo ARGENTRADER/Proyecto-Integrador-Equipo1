@@ -1,3 +1,6 @@
+## Frontend Dinámico de ARGENTRADER Demo
+Aquí encontrarás todos los archivos relacionados al desarrollo de nuestra SPA con Angular.
+
 # ArgentraderDemo
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.7.
