@@ -5,12 +5,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComunComponent } from './componentes/header-comun/header-comun.component';
 import { FooterComunComponent } from './componentes/footer-comun/footer-comun.component';
+import { FormCreateUserComponent } from './componentes/form-create-user/form-create-user.component';
+import { TopButtonComponent } from './componentes/top-button/top-button.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComunComponent,
-    FooterComunComponent
+    FooterComunComponent,
+    FormCreateUserComponent,
+    TopButtonComponent
   ],
   imports: [
     BrowserModule,
