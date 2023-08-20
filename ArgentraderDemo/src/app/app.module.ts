@@ -7,6 +7,7 @@ import { HeaderComunComponent } from './componentes/header-comun/header-comun.co
 import { FooterComunComponent } from './componentes/footer-comun/footer-comun.component';
 import { FormCreateUserComponent } from './componentes/form-create-user/form-create-user.component';
 import { TopButtonComponent } from './componentes/top-button/top-button.component';
+import { ExitButtonComponent } from './componentes/exit-button/exit-button.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { TopButtonComponent } from './componentes/top-button/top-button.componen
     HeaderComunComponent,
     FooterComunComponent,
     FormCreateUserComponent,
-    TopButtonComponent
+    TopButtonComponent,
+    ExitButtonComponent
   ],
   imports: [
     BrowserModule,
