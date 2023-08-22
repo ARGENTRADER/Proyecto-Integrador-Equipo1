@@ -8,7 +8,6 @@ import { FooterComunComponent } from './componentes/footer-comun/footer-comun.co
 import { FormCreateUserComponent } from './componentes/form-create-user/form-create-user.component';
 import { TopButtonComponent } from './componentes/top-button/top-button.component';
 import { ExitButtonComponent } from './componentes/exit-button/exit-button.component';
-import { LandingPageComponent } from './pages/landing-page/landing-page.component';
 import { LoginComponent } from './paginas/login/login.component';
 import { CreateUserComponent } from './paginas/create-user/create-user.component';
 import { HomeCotizacionesComponent } from './paginas/home-cotizaciones/home-cotizaciones.component';
@@ -29,7 +28,6 @@ import { ChooseResultComponent } from './paginas/choose-result/choose-result.com
     FormCreateUserComponent,
     TopButtonComponent,
     ExitButtonComponent,
-    LandingPageComponent,
     LoginComponent,
     CreateUserComponent,
     HomeCotizacionesComponent,
