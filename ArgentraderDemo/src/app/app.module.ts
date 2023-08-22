@@ -8,6 +8,18 @@ import { FooterComunComponent } from './componentes/footer-comun/footer-comun.co
 import { FormCreateUserComponent } from './componentes/form-create-user/form-create-user.component';
 import { TopButtonComponent } from './componentes/top-button/top-button.component';
 import { ExitButtonComponent } from './componentes/exit-button/exit-button.component';
+import { LandingPageComponent } from './pages/landing-page/landing-page.component';
+import { LoginComponent } from './paginas/login/login.component';
+import { CreateUserComponent } from './paginas/create-user/create-user.component';
+import { HomeCotizacionesComponent } from './paginas/home-cotizaciones/home-cotizaciones.component';
+import { MiCuentaComponent } from './paginas/mi-cuenta/mi-cuenta.component';
+import { MiPortfolioComponent } from './paginas/mi-portfolio/mi-portfolio.component';
+import { AjustesComponent } from './paginas/ajustes/ajustes.component';
+import { BuyFormComponent } from './paginas/buy-form/buy-form.component';
+import { RestorePasswordComponent } from './paginas/restore-password/restore-password.component';
+import { ValidateCodeComponent } from './paginas/validate-code/validate-code.component';
+import { ChoosePasswordComponent } from './paginas/choose-password/choose-password.component';
+import { ChooseResultComponent } from './paginas/choose-result/choose-result.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +28,19 @@ import { ExitButtonComponent } from './componentes/exit-button/exit-button.compo
     FooterComunComponent,
     FormCreateUserComponent,
     TopButtonComponent,
-    ExitButtonComponent
+    ExitButtonComponent,
+    LandingPageComponent,
+    LoginComponent,
+    CreateUserComponent,
+    HomeCotizacionesComponent,
+    MiCuentaComponent,
+    MiPortfolioComponent,
+    AjustesComponent,
+    BuyFormComponent,
+    RestorePasswordComponent,
+    ValidateCodeComponent,
+    ChoosePasswordComponent,
+    ChooseResultComponent
   ],
   imports: [
     BrowserModule,
