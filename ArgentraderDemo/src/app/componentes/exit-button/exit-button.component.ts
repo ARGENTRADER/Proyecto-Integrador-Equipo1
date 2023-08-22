@@ -6,7 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./exit-button.component.css']
 })
 export class ExitButtonComponent {
-  salir() {
-    
-  }
+  
 }
