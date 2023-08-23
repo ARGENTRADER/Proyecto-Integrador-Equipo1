@@ -19,6 +19,7 @@ import { RestorePasswordComponent } from './paginas/restore-password/restore-pas
 import { ValidateCodeComponent } from './paginas/validate-code/validate-code.component';
 import { ChoosePasswordComponent } from './paginas/choose-password/choose-password.component';
 import { ChooseResultComponent } from './paginas/choose-result/choose-result.component';
+import { ResetPassComponent } from './componentes/reset-pass/reset-pass.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { ChooseResultComponent } from './paginas/choose-result/choose-result.com
     RestorePasswordComponent,
     ValidateCodeComponent,
     ChoosePasswordComponent,
-    ChooseResultComponent
+    ChooseResultComponent,
+    ResetPassComponent
   ],
   imports: [
     BrowserModule,
