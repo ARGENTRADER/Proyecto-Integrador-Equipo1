@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Output } from '@angular/core';
 
 @Component({
   selector: 'app-login-form',
@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./login-form.component.css']
 })
 export class LoginFormComponent {
-
+  
 }
