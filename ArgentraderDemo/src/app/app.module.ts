@@ -22,6 +22,9 @@ import { ChooseResultComponent } from './paginas/choose-result/choose-result.com
 import { ResetPassComponent } from './componentes/reset-pass/reset-pass.component';
 import { BodyLadingPageComponent } from './componentes/body-lading-page/body-lading-page.component';
 import { LoginFormComponent } from './componentes/login-form/login-form.component';
+import { GetPassComponent } from './componentes/get-pass/get-pass.component';
+import { ResetPassStateComponent } from './componentes/reset-pass-state/reset-pass-state.component';
+import { VerifyCodeComponent } from './componentes/verify-code/verify-code.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +47,10 @@ import { LoginFormComponent } from './componentes/login-form/login-form.componen
     ChooseResultComponent,
     ResetPassComponent,
     BodyLadingPageComponent,
-    LoginFormComponent
+    LoginFormComponent,
+    GetPassComponent,
+    ResetPassStateComponent,
+    VerifyCodeComponent
   ],
   imports: [
     BrowserModule,
