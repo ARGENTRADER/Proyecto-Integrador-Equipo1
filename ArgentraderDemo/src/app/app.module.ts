@@ -21,6 +21,7 @@ import { ChoosePasswordComponent } from './paginas/choose-password/choose-passwo
 import { ChooseResultComponent } from './paginas/choose-result/choose-result.component';
 import { ResetPassComponent } from './componentes/reset-pass/reset-pass.component';
 import { BodyLadingPageComponent } from './componentes/body-lading-page/body-lading-page.component';
+import { LoginFormComponent } from './componentes/login-form/login-form.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { BodyLadingPageComponent } from './componentes/body-lading-page/body-lad
     ChoosePasswordComponent,
     ChooseResultComponent,
     ResetPassComponent,
-    BodyLadingPageComponent
+    BodyLadingPageComponent,
+    LoginFormComponent
   ],
   imports: [
     BrowserModule,
