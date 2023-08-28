@@ -10,7 +10,6 @@ import { CotizacionesServiceService } from 'app/services/cotizaciones-service.se
   styleUrls: ['./cotizations-table.component.css']
 })
 export class CotizationsTableComponent implements OnInit {
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   cotizationsData:any;
   constructor(private cotizacionesService:CotizacionesServiceService){}
   
