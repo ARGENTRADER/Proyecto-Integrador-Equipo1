@@ -25,6 +25,9 @@ import { LoginFormComponent } from './componentes/login-form/login-form.componen
 import { GetPassComponent } from './componentes/get-pass/get-pass.component';
 import { ResetPassStateComponent } from './componentes/reset-pass-state/reset-pass-state.component';
 import { VerifyCodeComponent } from './componentes/verify-code/verify-code.component';
+import { CotizationsTableComponent } from './componentes/cotizations-table/cotizations-table.component';
+import { CotizacionesServiceService } from './services/cotizaciones-service.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -50,13 +53,17 @@ import { VerifyCodeComponent } from './componentes/verify-code/verify-code.compo
     LoginFormComponent,
     GetPassComponent,
     ResetPassStateComponent,
-    VerifyCodeComponent
+    VerifyCodeComponent,
+    CotizationsTableComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+    CotizacionesServiceService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
