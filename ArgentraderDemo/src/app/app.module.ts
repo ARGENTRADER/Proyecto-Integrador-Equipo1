@@ -29,6 +29,7 @@ import { CotizationsTableComponent } from './componentes/cotizations-table/cotiz
 import { CotizacionesServiceService } from './services/cotizaciones-service.service';
 import { HttpClientModule } from '@angular/common/http';
 import { NotFoundComponent } from './paginas/not-found/not-found.component';
+import { MyPortfolioComponent } from './componentes/my-portfolio/my-portfolio.component';
 
 @NgModule({
   declarations: [
@@ -56,7 +57,8 @@ import { NotFoundComponent } from './paginas/not-found/not-found.component';
     ResetPassStateComponent,
     VerifyCodeComponent,
     CotizationsTableComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    MyPortfolioComponent
   ],
   imports: [
     BrowserModule,
