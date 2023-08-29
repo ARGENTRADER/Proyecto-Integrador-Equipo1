@@ -28,6 +28,7 @@ import { VerifyCodeComponent } from './componentes/verify-code/verify-code.compo
 import { CotizationsTableComponent } from './componentes/cotizations-table/cotizations-table.component';
 import { CotizacionesServiceService } from './services/cotizaciones-service.service';
 import { HttpClientModule } from '@angular/common/http';
+import { NotFoundComponent } from './paginas/not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -54,7 +55,8 @@ import { HttpClientModule } from '@angular/common/http';
     GetPassComponent,
     ResetPassStateComponent,
     VerifyCodeComponent,
-    CotizationsTableComponent
+    CotizationsTableComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
