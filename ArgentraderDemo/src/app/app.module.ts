@@ -14,7 +14,7 @@ import { HomeCotizacionesComponent } from './paginas/home-cotizaciones/home-coti
 import { MiCuentaComponent } from './paginas/mi-cuenta/mi-cuenta.component';
 import { MiPortfolioComponent } from './paginas/mi-portfolio/mi-portfolio.component';
 import { AjustesComponent } from './paginas/ajustes/ajustes.component';
-import { BuyFormComponent } from './paginas/buy-form/buy-form.component';
+import { BuyFormPageComponent } from './paginas/buy-form-page/buy-form.component';
 import { RestorePasswordComponent } from './paginas/restore-password/restore-password.component';
 import { ValidateCodeComponent } from './paginas/validate-code/validate-code.component';
 import { ChoosePasswordComponent } from './paginas/choose-password/choose-password.component';
@@ -30,6 +30,7 @@ import { CotizacionesServiceService } from './services/cotizaciones-service.serv
 import { HttpClientModule } from '@angular/common/http';
 import { NotFoundComponent } from './paginas/not-found/not-found.component';
 import { MyPortfolioComponent } from './componentes/my-portfolio/my-portfolio.component';
+import { BuyFormComponent } from './componentes/buy-form/buy-form.component'
 
 @NgModule({
   declarations: [
@@ -45,7 +46,7 @@ import { MyPortfolioComponent } from './componentes/my-portfolio/my-portfolio.co
     MiCuentaComponent,
     MiPortfolioComponent,
     AjustesComponent,
-    BuyFormComponent,
+    BuyFormPageComponent,
     RestorePasswordComponent,
     ValidateCodeComponent,
     ChoosePasswordComponent,
@@ -58,7 +59,8 @@ import { MyPortfolioComponent } from './componentes/my-portfolio/my-portfolio.co
     VerifyCodeComponent,
     CotizationsTableComponent,
     NotFoundComponent,
-    MyPortfolioComponent
+    MyPortfolioComponent,
+    BuyFormComponent
   ],
   imports: [
     BrowserModule,
