@@ -6,3 +6,15 @@ form {
   padding: 15px;
 }
 
+@media screen and (max-width: 370px){
+    
+  .a-forgot {
+      margin-bottom: 1px;
+  }
+
+  .div-forgot {
+      display: grid;
+      place-items: center;
+      margin: auto;
+  }
+}
