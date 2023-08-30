@@ -1,0 +1,94 @@
+
+.container-fluid {
+  background-color: #1a1a1a;
+}
+
+.btn-primary {
+  background-color: #1c3444;
+}
+
+.buy-form {
+  background-color: #fcfbf4;
+  border-radius: 15px;
+}
+
+form {
+  padding: 15px;
+}
+
+input {
+  border-radius: 5px;
+  width: 30%;
+  background-color: #fcfbf4;
+}
+
+#cantidad{
+  margin-left: 10px;
+}
+
+.buy-img {
+  height: 50px;
+}
+
+.icon {
+  width: 30px;
+  background-color: #fff;
+}
+
+.table {
+  margin-bottom: 0px;
+  max-width: 100%;
+}
+
+.table-reponsive {
+  max-width: 100%;
+}
+
+#tabla-cotizaciones td,
+#tabla-cotizaciones th {
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* Estilo para centrar y dar separación a los botones en la última fila */
+
+.centered-cell {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.cell-spacing {
+  margin-top: 10px;
+}
+
+.button-spacing{
+  margin-right: 50px;
+}
+
+#navbar {
+  padding: 10px;
+  margin-top: 25px;
+}
+
+
+
+.labels {
+  background-color: #fff;
+}
+
+.a-cotiza {
+  text-decoration: none;
+  color: #fff;
+  background-color: transparent;
+}
+
+
+.a-forgot {
+  margin-top: 5px;
+}
+
+#a-none {
+  text-decoration: none;
+}
+
