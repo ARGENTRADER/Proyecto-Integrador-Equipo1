@@ -28,10 +28,12 @@ import { VerifyCodeComponent } from './componentes/verify-code/verify-code.compo
 import { CotizationsTableComponent } from './componentes/cotizations-table/cotizations-table.component';
 import { CotizacionesServiceService } from './services/cotizaciones-service.service';
 import { HttpClientModule } from '@angular/common/http';
-import { NotFoundComponent } from './paginas/not-found/not-found.component';
+import { NotFoundPageComponent } from './paginas/not-found-page/not-found.component';
 import { MyPortfolioComponent } from './componentes/my-portfolio/my-portfolio.component';
 import { BuyFormComponent } from './componentes/buy-form/buy-form.component';
-import { SettingsComponent } from './componentes/settings/settings.component'
+import { SettingsComponent } from './componentes/settings/settings.component';
+import { MyAccountComponent } from './componentes/my-account/my-account.component';
+import { NotFoundComponent } from './componentes/not-found/not-found.component'
 
 @NgModule({
   declarations: [
@@ -59,10 +61,12 @@ import { SettingsComponent } from './componentes/settings/settings.component'
     ResetPassStateComponent,
     VerifyCodeComponent,
     CotizationsTableComponent,
-    NotFoundComponent,
+    NotFoundPageComponent,
     MyPortfolioComponent,
     BuyFormComponent,
-    SettingsComponent
+    SettingsComponent,
+    MyAccountComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
