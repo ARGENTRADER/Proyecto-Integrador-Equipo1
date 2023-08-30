@@ -1,9 +1,9 @@
 button {
   position: fixed;
-  bottom: 70px;
+  bottom: 120px;
   right: 20px;
   width: 75px;
-  padding: 10px 20px;
+  padding: 10px 10px;
   background-color: #1a1a1a;
   --bs-btn-line-height: 1;
 }
@@ -12,8 +12,8 @@ button {
   button {
     --bs-btn-line-height: 0.8;
     width: 60px;
-    bottom: 65px;
     font-size: 0.85rem;
+    bottom: 110px;
     padding-left: 10px;
     padding-right: 10px;
   }

@@ -34,7 +34,8 @@ import { BuyFormComponent } from './componentes/buy-form/buy-form.component';
 import { SettingsComponent } from './componentes/settings/settings.component';
 import { MyAccountComponent } from './componentes/my-account/my-account.component';
 import { NotFoundComponent } from './componentes/not-found/not-found.component'
-import { LandingPageComponent } from './paginas/landing-page/landing-page.component'
+import { LandingPageComponent } from './paginas/landing-page/landing-page.component';
+import { ReturnBtnComponent } from './componentes/return-btn/return-btn.component'
 
 @NgModule({
   declarations: [
@@ -68,7 +69,8 @@ import { LandingPageComponent } from './paginas/landing-page/landing-page.compon
     SettingsComponent,
     MyAccountComponent,
     NotFoundComponent,
-    LandingPageComponent
+    LandingPageComponent,
+    ReturnBtnComponent
   ],
   imports: [
     BrowserModule,
