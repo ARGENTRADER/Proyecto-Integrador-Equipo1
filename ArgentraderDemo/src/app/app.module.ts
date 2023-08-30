@@ -28,9 +28,14 @@ import { VerifyCodeComponent } from './componentes/verify-code/verify-code.compo
 import { CotizationsTableComponent } from './componentes/cotizations-table/cotizations-table.component';
 import { CotizacionesServiceService } from './services/cotizaciones-service.service';
 import { HttpClientModule } from '@angular/common/http';
-import { NotFoundComponent } from './paginas/not-found/not-found.component';
+import { NotFoundPageComponent } from './paginas/not-found-page/not-found.component';
 import { MyPortfolioComponent } from './componentes/my-portfolio/my-portfolio.component';
-import { BuyFormComponent } from './componentes/buy-form/buy-form.component'
+import { BuyFormComponent } from './componentes/buy-form/buy-form.component';
+import { SettingsComponent } from './componentes/settings/settings.component';
+import { MyAccountComponent } from './componentes/my-account/my-account.component';
+import { NotFoundComponent } from './componentes/not-found/not-found.component'
+import { LandingPageComponent } from './paginas/landing-page/landing-page.component';
+import { ReturnBtnComponent } from './componentes/return-btn/return-btn.component'
 
 @NgModule({
   declarations: [
@@ -58,9 +63,14 @@ import { BuyFormComponent } from './componentes/buy-form/buy-form.component'
     ResetPassStateComponent,
     VerifyCodeComponent,
     CotizationsTableComponent,
-    NotFoundComponent,
+    NotFoundPageComponent,
     MyPortfolioComponent,
-    BuyFormComponent
+    BuyFormComponent,
+    SettingsComponent,
+    MyAccountComponent,
+    NotFoundComponent,
+    LandingPageComponent,
+    ReturnBtnComponent
   ],
   imports: [
     BrowserModule,

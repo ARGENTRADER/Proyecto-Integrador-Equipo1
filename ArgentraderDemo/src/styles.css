@@ -10,7 +10,9 @@ body {
   margin-bottom: 40px;
 }
 
-/* stlye-ajustes-Julian */
+/*
+
+ stlye-ajustes-Julian 
 .settings-section {
   max-width: 400px;
   margin: 50px auto;
@@ -47,7 +49,7 @@ body {
 }
 
 
-/* stlye-mi-cuenta-Julian */
+ stlye-mi-cuenta-Julian 
 .profile-section {
   max-width: 800px;
   margin: 0 auto;
@@ -128,7 +130,7 @@ body {
 }
 
 
-/* stlye-not-found-Julian */
+ stlye-not-found-Julian 
 .error-container {
   background-color: #ffffff;
   padding: 20px;
@@ -147,4 +149,4 @@ body {
   color: #99bbdb;
   text-decoration: none;
   font-weight: bold;
-}
+} */
