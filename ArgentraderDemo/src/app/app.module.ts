@@ -30,7 +30,8 @@ import { CotizacionesServiceService } from './services/cotizaciones-service.serv
 import { HttpClientModule } from '@angular/common/http';
 import { NotFoundComponent } from './paginas/not-found/not-found.component';
 import { MyPortfolioComponent } from './componentes/my-portfolio/my-portfolio.component';
-import { BuyFormComponent } from './componentes/buy-form/buy-form.component'
+import { BuyFormComponent } from './componentes/buy-form/buy-form.component';
+import { SettingsComponent } from './componentes/settings/settings.component'
 
 @NgModule({
   declarations: [
@@ -60,7 +61,8 @@ import { BuyFormComponent } from './componentes/buy-form/buy-form.component'
     CotizationsTableComponent,
     NotFoundComponent,
     MyPortfolioComponent,
-    BuyFormComponent
+    BuyFormComponent,
+    SettingsComponent
   ],
   imports: [
     BrowserModule,
