@@ -37,6 +37,8 @@ import { NotFoundComponent } from './componentes/not-found/not-found.component'
 import { LandingPageComponent } from './paginas/landing-page/landing-page.component';
 import { ReturnBtnComponent } from './componentes/return-btn/return-btn.component';
 import { CarrouselComponent } from './componentes/carrousel/carrousel.component'
+import { FooterLandingComponent } from './componentes/footer-landing/footer-landing.component';
+import { HeaderLandingComponent } from './componentes/header-landing/header-landing.component';
 
 @NgModule({
   declarations: [
@@ -72,7 +74,10 @@ import { CarrouselComponent } from './componentes/carrousel/carrousel.component'
     NotFoundComponent,
     LandingPageComponent,
     ReturnBtnComponent,
-    CarrouselComponent
+    CarrouselComponent,
+    FooterLandingComponent,
+    BodyLadingPageComponent,
+    HeaderLandingComponent
   ],
   imports: [
     BrowserModule,
