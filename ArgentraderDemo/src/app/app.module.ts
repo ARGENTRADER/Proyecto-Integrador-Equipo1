@@ -20,7 +20,6 @@ import { ValidateCodeComponent } from './paginas/validate-code/validate-code.com
 import { ChoosePasswordComponent } from './paginas/choose-password/choose-password.component';
 import { ChooseResultComponent } from './paginas/choose-result/choose-result.component';
 import { ResetPassComponent } from './componentes/reset-pass/reset-pass.component';
-import { BodyLadingPageComponent } from './componentes/body-lading-page/body-lading-page.component';
 import { LoginFormComponent } from './componentes/login-form/login-form.component';
 import { GetPassComponent } from './componentes/get-pass/get-pass.component';
 import { ResetPassStateComponent } from './componentes/reset-pass-state/reset-pass-state.component';
@@ -28,7 +27,10 @@ import { VerifyCodeComponent } from './componentes/verify-code/verify-code.compo
 import { CotizationsTableComponent } from './componentes/cotizations-table/cotizations-table.component';
 import { CotizacionesServiceService } from './services/cotizaciones-service.service';
 import { HttpClientModule } from '@angular/common/http';
-
+import { HeaderLandingComponent } from './componentes/header-landing/header-landing.component';
+import { FooterLandingComponent } from './componentes/footer-landing/footer-landing.component';
+import { LandingPageComponent } from './paginas/landing-page/landing-page.component';
+import { BodyLadingPageComponent } from './componentes/body-lading-page/body-lading-page.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -49,12 +51,15 @@ import { HttpClientModule } from '@angular/common/http';
     ChoosePasswordComponent,
     ChooseResultComponent,
     ResetPassComponent,
-    BodyLadingPageComponent,
     LoginFormComponent,
     GetPassComponent,
     ResetPassStateComponent,
     VerifyCodeComponent,
-    CotizationsTableComponent
+    CotizationsTableComponent,
+    HeaderLandingComponent,
+    FooterLandingComponent,
+    BodyLadingPageComponent,
+    LandingPageComponent
   ],
   imports: [
     BrowserModule,

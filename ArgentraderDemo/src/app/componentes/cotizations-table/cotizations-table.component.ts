@@ -1,6 +1,5 @@
 /* eslint-disable @angular-eslint/no-empty-lifecycle-method */
 /* eslint-disable @typescript-eslint/no-empty-function */
-import { ArrayType } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
 import { CotizacionesServiceService } from 'app/services/cotizaciones-service.service';
 
@@ -10,15 +9,15 @@ import { CotizacionesServiceService } from 'app/services/cotizaciones-service.se
   styleUrls: ['./cotizations-table.component.css']
 })
 export class CotizationsTableComponent implements OnInit {
-  cotizationsData:any;
+  // cotizationsData:any;
   constructor(private cotizacionesService:CotizacionesServiceService){}
   
 
   ngOnInit(): void{
   }
   refrescar_cotizaciones(){
-    this.cotizacionesService.getCotizaciones().subscribe(cotizationsData =>{this.cotizationsData = cotizationsData});
-    console.log(this.cotizationsData);
+    this.cotizacionesService.getCotizaciones().subscribe(cotizationsData =>{cotizationsData});
+    // console.log(cotizationsData);
   }
 
 }

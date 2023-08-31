@@ -1,0 +1,21 @@
+footer {
+    background-color: #1a1a1a;
+    color: #e4c47c;
+    padding: 20px;
+    text-align: center;
+}
+.logofooter {
+    width: 500px; 
+    height: auto; 
+    margin-bottom: 15px; 
+}
+.mod-b div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.mod-b div p{
+    align-self: end;
+}
