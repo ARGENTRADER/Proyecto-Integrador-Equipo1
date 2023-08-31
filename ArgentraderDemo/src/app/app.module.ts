@@ -39,6 +39,7 @@ import { ReturnBtnComponent } from './componentes/return-btn/return-btn.componen
 import { CarrouselComponent } from './componentes/carrousel/carrousel.component'
 import { FooterLandingComponent } from './componentes/footer-landing/footer-landing.component';
 import { HeaderLandingComponent } from './componentes/header-landing/header-landing.component';
+import { NavbarComunComponent } from './componentes/navbar-comun/navbar-comun.component';
 
 @NgModule({
   declarations: [
@@ -77,7 +78,8 @@ import { HeaderLandingComponent } from './componentes/header-landing/header-land
     CarrouselComponent,
     FooterLandingComponent,
     BodyLadingPageComponent,
-    HeaderLandingComponent
+    HeaderLandingComponent,
+    NavbarComunComponent
   ],
   imports: [
     BrowserModule,
