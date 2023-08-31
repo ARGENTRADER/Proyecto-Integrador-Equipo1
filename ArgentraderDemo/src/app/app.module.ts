@@ -35,7 +35,8 @@ import { SettingsComponent } from './componentes/settings/settings.component';
 import { MyAccountComponent } from './componentes/my-account/my-account.component';
 import { NotFoundComponent } from './componentes/not-found/not-found.component'
 import { LandingPageComponent } from './paginas/landing-page/landing-page.component';
-import { ReturnBtnComponent } from './componentes/return-btn/return-btn.component'
+import { ReturnBtnComponent } from './componentes/return-btn/return-btn.component';
+import { CarrouselComponent } from './componentes/carrousel/carrousel.component'
 
 @NgModule({
   declarations: [
@@ -70,7 +71,8 @@ import { ReturnBtnComponent } from './componentes/return-btn/return-btn.componen
     MyAccountComponent,
     NotFoundComponent,
     LandingPageComponent,
-    ReturnBtnComponent
+    ReturnBtnComponent,
+    CarrouselComponent
   ],
   imports: [
     BrowserModule,
