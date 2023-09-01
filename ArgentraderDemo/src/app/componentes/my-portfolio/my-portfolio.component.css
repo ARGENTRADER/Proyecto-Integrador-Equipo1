@@ -1,0 +1,59 @@
+.container-fluid {
+  background-color: #1a1a1a;
+}
+
+.buy-form {
+  background-color: #fcfbf4;
+  border-radius: 15px;
+}
+
+form {
+  padding: 15px;
+}
+
+.icon {
+  width: 30px;
+  background-color: #fff;
+}
+
+.table {
+  margin-bottom: 0px;
+  max-width: 100%;
+}
+
+.table-reponsive {
+  max-width: 100%;
+}
+
+#tabla-cotizaciones td,
+#tabla-cotizaciones th {
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Quitar blanco del fondo de los elementos de landing*/
+

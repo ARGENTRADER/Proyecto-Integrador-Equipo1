@@ -1,0 +1,95 @@
+.trying {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bd-example :where(h4, p, ol, .carousel-caption) {
+  background-color: transparent;
+}
+
+.bd-example :where(.carousel) {
+  background-color: #1a1a1a;
+}
+
+.bd-example :where(ol) {
+  margin-bottom: 0px;
+}
+
+.bd-example :where(.carousel-caption) {
+  padding: 0px;
+}
+
+.carousel-item {
+  height: 500px;
+  overflow: hidden;
+}
+
+.carousel-item img {
+  height: 100%;
+  max-width: 500px;
+  object-fit: cover;
+  padding: 0px;
+  border-radius: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .carousel-item :where(p) {
+      display: none;
+  }    
+}
+
+@media screen and (max-width: 551px) {
+  .carousel-item {
+      height: 450px;
+      width: 450px;
+  }
+  .carousel-item img {
+      max-width: 450px;
+  }
+}
+
+
+@media screen and (max-width: 511px) {
+  .carousel-item {
+      height: 400px;
+      width: 400px;
+  }
+  .carousel-item img {
+      max-width: 400px;
+  }
+}
+
+@media screen and (max-width: 451px) {
+  .carousel-item {
+      height: 350px;
+      width: 350px;
+  }
+  .carousel-item img {
+      max-width: 350px;
+  }
+}
+
+@media screen and (max-width: 411px) {
+  .carousel-item {
+      height: 300px;
+      width: 300px;
+  }
+  .carousel-item img {
+      max-width: 300px;
+  }
+}
+
+@media screen and (max-width: 351px) {
+  .carousel-item {
+      height: 250px;
+      width: 250px;
+  }
+  .carousel-item img {
+      max-width: 250px;
+  }
+  .carousel-item :where(h4) {
+      font-size: 20px;
+      margin-bottom: 0px;
+  }
+}

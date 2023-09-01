@@ -14,12 +14,13 @@ import { HomeCotizacionesComponent } from './paginas/home-cotizaciones/home-coti
 import { MiCuentaComponent } from './paginas/mi-cuenta/mi-cuenta.component';
 import { MiPortfolioComponent } from './paginas/mi-portfolio/mi-portfolio.component';
 import { AjustesComponent } from './paginas/ajustes/ajustes.component';
-import { BuyFormComponent } from './paginas/buy-form/buy-form.component';
+import { BuyFormPageComponent } from './paginas/buy-form-page/buy-form.component';
 import { RestorePasswordComponent } from './paginas/restore-password/restore-password.component';
 import { ValidateCodeComponent } from './paginas/validate-code/validate-code.component';
 import { ChoosePasswordComponent } from './paginas/choose-password/choose-password.component';
 import { ChooseResultComponent } from './paginas/choose-result/choose-result.component';
 import { ResetPassComponent } from './componentes/reset-pass/reset-pass.component';
+import { BodyLadingPageComponent } from './componentes/body-lading-page/body-lading-page.component';
 import { LoginFormComponent } from './componentes/login-form/login-form.component';
 import { GetPassComponent } from './componentes/get-pass/get-pass.component';
 import { ResetPassStateComponent } from './componentes/reset-pass-state/reset-pass-state.component';
@@ -27,10 +28,19 @@ import { VerifyCodeComponent } from './componentes/verify-code/verify-code.compo
 import { CotizationsTableComponent } from './componentes/cotizations-table/cotizations-table.component';
 import { CotizacionesServiceService } from './services/cotizaciones-service.service';
 import { HttpClientModule } from '@angular/common/http';
-import { HeaderLandingComponent } from './componentes/header-landing/header-landing.component';
-import { FooterLandingComponent } from './componentes/footer-landing/footer-landing.component';
+import { NotFoundPageComponent } from './paginas/not-found-page/not-found.component';
+import { MyPortfolioComponent } from './componentes/my-portfolio/my-portfolio.component';
+import { BuyFormComponent } from './componentes/buy-form/buy-form.component';
+import { SettingsComponent } from './componentes/settings/settings.component';
+import { MyAccountComponent } from './componentes/my-account/my-account.component';
+import { NotFoundComponent } from './componentes/not-found/not-found.component'
 import { LandingPageComponent } from './paginas/landing-page/landing-page.component';
-import { BodyLadingPageComponent } from './componentes/body-lading-page/body-lading-page.component';
+import { ReturnBtnComponent } from './componentes/return-btn/return-btn.component';
+import { CarrouselComponent } from './componentes/carrousel/carrousel.component'
+import { FooterLandingComponent } from './componentes/footer-landing/footer-landing.component';
+import { HeaderLandingComponent } from './componentes/header-landing/header-landing.component';
+import { NavbarComunComponent } from './componentes/navbar-comun/navbar-comun.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -45,21 +55,31 @@ import { BodyLadingPageComponent } from './componentes/body-lading-page/body-lad
     MiCuentaComponent,
     MiPortfolioComponent,
     AjustesComponent,
-    BuyFormComponent,
+    BuyFormPageComponent,
     RestorePasswordComponent,
     ValidateCodeComponent,
     ChoosePasswordComponent,
     ChooseResultComponent,
     ResetPassComponent,
+    BodyLadingPageComponent,
     LoginFormComponent,
     GetPassComponent,
     ResetPassStateComponent,
     VerifyCodeComponent,
     CotizationsTableComponent,
-    HeaderLandingComponent,
+    NotFoundPageComponent,
+    MyPortfolioComponent,
+    BuyFormComponent,
+    SettingsComponent,
+    MyAccountComponent,
+    NotFoundComponent,
+    LandingPageComponent,
+    ReturnBtnComponent,
+    CarrouselComponent,
     FooterLandingComponent,
     BodyLadingPageComponent,
-    LandingPageComponent
+    HeaderLandingComponent,
+    NavbarComunComponent
   ],
   imports: [
     BrowserModule,
