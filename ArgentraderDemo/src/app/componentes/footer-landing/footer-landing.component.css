@@ -19,3 +19,7 @@ footer {
 .mod-b div p{
     align-self: end;
 }
+
+footer > img {
+    max-width: 100%;
+}
