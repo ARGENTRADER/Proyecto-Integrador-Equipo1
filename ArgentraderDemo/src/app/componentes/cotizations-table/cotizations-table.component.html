@@ -1,4 +1,3 @@
-<button class="btn btn-primary" (click)="refrescar_cotizaciones()" hidden>Click</button>
 <div class="container-fluid mt-5">
     <form class="buy-form mb-5">
       <div class="table-responsive">
@@ -21,52 +20,18 @@
         </tr>
         </thead>
         <tbody>
-        <tr>
-          <td><img src="../../../assets/images/Logos/logo-de-prueba.png" alt="" class="img-fluid icon"></td>
-          <td>Empresa</td>
-          <td>XXXXXX</td>
-          <td>XXXXXX</td>
-          <td>XXXXXX</td>
-          <td>XXXXXX</td>
-          <td>XXXXXX</td>
-          <td>XXXXXX</td>
-          <td>XXXXXX</td>
-          <td>XXXXXX</td>
-          <td>XXXXXX</td>
-          <td><img src="../../../assets/images/Logos/cotizacion-prueba.svg" alt="" class="img-fluid cotizacion-img"></td>
-          <td class="centered-cell">
-            <button class="btn btn-primary"><a href="/Forms(Herrera-Salvini)/prueba-buy-form.html" class="a-cotiza">Comprar</a></button>
-          </td>
-        </tr>
-        <tr>
-          <td><img src="../../../assets/images/Logos/icono-de-prueba-3.png" alt="" class="img-fluid icon"></td>
-          <td>Empresa</td>
-          <td>XXXXXX</td>
-          <td>XXXXXX</td>
-          <td>XXXXXX</td>
-          <td>XXXXXX</td>
-          <td>XXXXXX</td>
-          <td>XXXXXX</td>
-          <td>XXXXXX</td>
-          <td>XXXXXX</td>
-          <td>XXXXXX</td>
-          <td><img src="../../../assets/images/Logos/cotizacion-prueba.svg" alt="" class="img-fluid cotizacion-img"></td>
-          <td class="centered-cell">
-            <button class="btn btn-primary"><a href="/Forms(Herrera-Salvini)/prueba-buy-form.html" class="a-cotiza">Comprar</a></button>
-          </td>
-        </tr>
-        <tr>
-          <td><img src="../../../assets/images/Logos/icono-de-prueba-2.png" alt="" class="img-fluid icon"></td>
-          <td>Empresa</td>
-          <td>XXXXXX</td>
-          <td>XXXXXX</td>
-          <td>XXXXXX</td>
-          <td>XXXXXX</td>
-          <td>XXXXXX</td>
-          <td>XXXXXX</td>
-          <td>XXXXXX</td>
-          <td>XXXXXX</td>
-          <td>XXXXXX</td>
+        <tr *ngFor="let item of cotizationsData">
+          <td>{{item.simbolo}}</td>
+          <td>{{item.descripcion}}</td>
+          <td>{{item.ultimoPrecio}}</td>
+          <td>{{item.puntas?item.puntas.cantidadCompra:"-"}}</td>
+          <td>{{item.puntas?item.puntas.precioCompra:"-"}}</td>
+          <td>{{item.puntas?item.puntas.precioVenta:"-"}}</td>
+          <td>{{item.puntas?item.puntas.cantidadVenta:"-"}}</td>
+          <td>{{item.apertura}}</td>
+          <td>{{item.minimo}}</td>
+          <td>{{item.maximo}}</td>
+          <td>{{item.ultimoCierre}}</td>
           <td><img src="../../../assets/images/Logos/cotizacion-prueba.svg" alt="" class="img-fluid cotizacion-img"></td>
           <td class="centered-cell">
             <button class="btn btn-primary"><a href="/Forms(Herrera-Salvini)/prueba-buy-form.html" class="a-cotiza">Comprar</a></button>
@@ -77,6 +42,5 @@
       </div>
     </form>
   </div>
-
-<div class="saldo-label">Saldo disponible: $500000ARS </div>
+<div class="saldo-label">Saldo disponible: $500000ARS</div>
 

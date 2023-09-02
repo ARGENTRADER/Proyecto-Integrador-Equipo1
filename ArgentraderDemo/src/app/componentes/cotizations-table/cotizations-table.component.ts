@@ -19,11 +19,11 @@ export class CotizationsTableComponent implements OnInit {
   constructor(private cotizacionesService:CotizacionesServiceService){}
   cotizationsData:any;
   ngOnInit(): void{
+    this.refrescar_cotizaciones();
   }
   refrescar_cotizaciones(){
   //this.cotizacionesService.getCotizaciones().subscribe(cotizationsData =>{console.log(cotizationsData)});
   this.cotizacionesService.getCotizaciones().subscribe(cotizationsData => {this.cotizationsData = cotizationsData["titulos"]});
   console.log(this.cotizationsData);
   }
-
 }
