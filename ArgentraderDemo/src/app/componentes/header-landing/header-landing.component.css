@@ -1,3 +1,6 @@
+.container-fluid {
+    max-width: 100%;
+}
 .navbar {
     opacity: 1;
     width: 100%;
@@ -8,9 +11,8 @@
     font-weight: bolder;
     font-size: 15px;
     background-color: #1a1a1a;
-    padding: 15px;
         /*Comento el gap porque se renderiza mejor el menú hamburguesa*/
-    gap: 100px;
+    gap: 50px;
     position: sticky;
     opacity: 1;
     min-height: 30px;
@@ -23,9 +25,11 @@
     display: flex;
     align-items: center;
 }
-.nav-links li {
+
+/* .nav-links li {
     margin-right: 10px;
-}
+} */
+
 .nav-links li a {
     color: #99bbdb;
     text-decoration: none;
@@ -92,4 +96,14 @@
 }
 .vertical > p {
     margin-bottom: 35px;
+}
+
+.logo {
+    padding-left: 20px;
+}
+
+@media screen and (max-width: 341px) {
+    .logo {
+        padding-left: 5px;
+    }
 }
