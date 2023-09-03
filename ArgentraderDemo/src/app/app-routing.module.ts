@@ -14,7 +14,9 @@ import { ChoosePasswordComponent } from './paginas/choose-password/choose-passwo
 import { ChooseResultComponent } from './paginas/choose-result/choose-result.component';
 import { NotFoundPageComponent } from './paginas/not-found-page/not-found.component';
 import { LandingPageComponent } from './paginas/landing-page/landing-page.component';
-import { GetNewPassComponent } from './paginas/get-new-pass/get-new-pass.component'
+import { GetNewPassComponent } from './paginas/get-new-pass/get-new-pass.component';
+import { VerifyRegisterPageComponent } from './paginas/verify-register-page/verify-register-page.component';
+import { VerifyRegisterStatePageComponent } from './paginas/verify-register-state-page/verify-register-state-page.component';
 
 const routes: Routes = [
   {
@@ -33,6 +35,14 @@ const routes: Routes = [
   {
     path: 'create-user',
     component: CreateUserComponent
+  },
+  {
+    path: 'verify-register',
+    component: VerifyRegisterPageComponent
+  },
+  {
+    path: 'verify-register-state',
+    component: VerifyRegisterStatePageComponent
   },
   {
     path: 'home',

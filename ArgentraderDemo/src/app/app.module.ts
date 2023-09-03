@@ -41,6 +41,10 @@ import { FooterLandingComponent } from './componentes/footer-landing/footer-land
 import { HeaderLandingComponent } from './componentes/header-landing/header-landing.component';
 import { NavbarComunComponent } from './componentes/navbar-comun/navbar-comun.component';
 import { GetNewPassComponent } from './paginas/get-new-pass/get-new-pass.component';
+import { VerifyRegisterComponent } from './componentes/verify-register/verify-register.component';
+import { VerifyRegisterStateComponent } from './componentes/verify-register-state/verify-register-state.component';
+import { VerifyRegisterPageComponent } from './paginas/verify-register-page/verify-register-page.component';
+import { VerifyRegisterStatePageComponent } from './paginas/verify-register-state-page/verify-register-state-page.component';
 
 @NgModule({
   declarations: [
@@ -81,7 +85,11 @@ import { GetNewPassComponent } from './paginas/get-new-pass/get-new-pass.compone
     BodyLadingPageComponent,
     HeaderLandingComponent,
     NavbarComunComponent,
-    GetNewPassComponent
+    GetNewPassComponent,
+    VerifyRegisterComponent,
+    VerifyRegisterStateComponent,
+    VerifyRegisterPageComponent,
+    VerifyRegisterStatePageComponent
   ],
   imports: [
     BrowserModule,
