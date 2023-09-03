@@ -40,6 +40,7 @@ import { CarrouselComponent } from './componentes/carrousel/carrousel.component'
 import { FooterLandingComponent } from './componentes/footer-landing/footer-landing.component';
 import { HeaderLandingComponent } from './componentes/header-landing/header-landing.component';
 import { NavbarComunComponent } from './componentes/navbar-comun/navbar-comun.component';
+import { GetNewPassComponent } from './paginas/get-new-pass/get-new-pass.component';
 
 @NgModule({
   declarations: [
@@ -79,7 +80,8 @@ import { NavbarComunComponent } from './componentes/navbar-comun/navbar-comun.co
     FooterLandingComponent,
     BodyLadingPageComponent,
     HeaderLandingComponent,
-    NavbarComunComponent
+    NavbarComunComponent,
+    GetNewPassComponent
   ],
   imports: [
     BrowserModule,
