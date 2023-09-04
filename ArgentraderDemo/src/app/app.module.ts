@@ -45,6 +45,7 @@ import { VerifyRegisterComponent } from './componentes/verify-register/verify-re
 import { VerifyRegisterStateComponent } from './componentes/verify-register-state/verify-register-state.component';
 import { VerifyRegisterPageComponent } from './paginas/verify-register-page/verify-register-page.component';
 import { VerifyRegisterStatePageComponent } from './paginas/verify-register-state-page/verify-register-state-page.component';
+import { LogoutButtonComponent } from './componentes/logout-button/logout-button.component';
 
 @NgModule({
   declarations: [
@@ -89,7 +90,8 @@ import { VerifyRegisterStatePageComponent } from './paginas/verify-register-stat
     VerifyRegisterComponent,
     VerifyRegisterStateComponent,
     VerifyRegisterPageComponent,
-    VerifyRegisterStatePageComponent
+    VerifyRegisterStatePageComponent,
+    LogoutButtonComponent
   ],
   imports: [
     BrowserModule,
