@@ -6,95 +6,13 @@
                 <img src="../../../assets/images/Logos/source/argentrader-high-resolution-logo-white-on-transparent-background(1).png" alt="" height="60">
                   <h1>EMPEZÁ A COMPRAR TUS <br>ACCIONES ARGENTINAS</h1>
                   <p>​En unos sencillos pasos podrás operar en el mercado de acciones.</p>
-                  <button class="botonprimero">EMPEZAR AHORA</button>
+                  <button routerLink="/create-user" class="botonprimero">EMPEZAR AHORA</button>
               </div>
           </section>
           
         
           <!--Añado carrusel ¿Quiénes somos?-->
-          
-          <section id="anclaqs">
-            <div class="bd-example">
-              <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                  <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-                  <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-                  <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-                  <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
-                  <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
-                  <li data-target="#carouselExampleCaptions" data-slide-to="5"></li>
-                  <li data-target="#carouselExampleCaptions" data-slide-to="6"></li>
-                </ol>
-                <div class="carousel-inner">
-                  <!--1-->
-                  <div class="carousel-item active">
-                    <img src="../../../assets/images/Logos/Imagenes-Carrusel/aaaaaaa.png" class="d-block w-100 carousel-img mx-auto" alt="Imagen de Julián Alladio: Desarrollador de ARGENTRADER.">
-                    <div class="carousel-caption">
-                      <h4>Alladio Julian</h4>
-                      <p>Desarrollador.</p>
-                    </div>
-                  </div>
-                  <!--2-->
-                  <div class="carousel-item">
-                    <img src="../../../assets/images/Logos/Imagenes-Carrusel/aaaaaaa.png" class="d-block w-100 carousel-img mx-auto" alt="Imagen de Matias Arguello: Desarrollador y Líder de Diseño de ARGENTRADER.">
-                    <div class="carousel-caption">
-                      <h4>Arguello Matias</h4>
-                      <p>Desarrollador y Líder de Diseño.</p>
-                    </div>
-                  </div>
-                  <!--3-->
-                  <div class="carousel-item">
-                    <img src="../../../assets/images/Logos/Imagenes-Carrusel/aaaaaaa.png" class="d-block w-100 carousel-img mx-auto col-md-4" alt="Imagen de Agripina Baldovino: Desarrolladora y Tester de ARGENTRADER.">
-                    <div class="carousel-caption">
-                      <h4>Baldovino Agripina</h4>
-                      <p>Desarrolladora y Tester.</p>
-                    </div>
-                  </div>
-                  <!--4-->
-                  <div class="carousel-item">
-                    <img src="../../../assets/images/Logos/Imagenes-Carrusel/aaaaaaa.png" class="d-block w-100 carousel-img mx-auto col-md-4" alt="Imagen de Augusto Herrera: Desarrollador de ARGENTRADER.">
-                    <div class="carousel-caption">
-                      <h4>Herrera Augusto</h4>
-                      <p>Desarrollador.</p>
-                    </div>
-                  </div>
-                  <!--5-->
-                  <div class="carousel-item">
-                    <img src="../../../assets/images/Logos/Imagenes-Carrusel/aaaaaaa.png" class="d-block w-100 carousel-img mx-auto col-md-4" alt="Imagen de Bethania La Manna: Desarrolladora y Tester de ARGENTRADER.">
-                    <div class="carousel-caption">
-                      <h4>La Manna Bethania</h4>
-                      <p>Desarrolladora y Tester.</p>
-                    </div>
-                  </div>
-                  <!--6-->
-                  <div class="carousel-item">
-                    <img src="../../../assets/images/Logos/Imagenes-Carrusel/aaaaaaa.png" class="d-block w-100 carousel-img mx-auto col-md-4" alt="Imagen de Andrés García Martín: Desarrollador de ARGENTRADER.">
-                    <div class="carousel-caption">
-                      <h4>Martín García Andrés</h4>
-                      <p>Desarrollador.</p>
-                    </div>
-                  </div>
-                  <!--7-->
-                  <div class="carousel-item">
-                    <img src="../../../assets/images/Logos//Imagenes-Carrusel/Salvini.jpeg" class="d-block w-100 carousel-img img-fluid mx-auto" alt="Imagen de Mariano Aldair Salvini: Desarrollador, Tester y Scrum Master de ARGENTRADER.">
-                    <div class="carousel-caption">
-                      <h4>Salvini Mariano Aldair</h4>
-                      <p>Desarrollador, Tester y Scrum Master.</p>
-                    </div>
-                  </div>
-                </div>
-                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="sr-only"></span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="sr-only"></span>
-                </a>
-              </div>
-            </div>  
-          </section>
-          
+          <app-carrousel></app-carrousel>
           <!--Carrusel añadido-->
           <div id="ancla1">
             <div class="porque">
@@ -127,7 +45,7 @@
               <div class="txt-academia">
                 <h2>ACADEMIA ARGENTRADER</h2>
                 <p>APRENDÉ CON NOSOTROS SIN COSTO, ¡EMPEZÁ A INVERTIR YA!</p>
-                <button class="btn-academia">ABRÍ TU CUENTA</button>
+                <button routerLink="/create-user" class="btn-academia">ABRÍ TU CUENTA</button>
               </div>
             </div>
             <div class="mod-b">
@@ -135,7 +53,7 @@
                 <span class="zero">$0</span> 
                 <p id="ancla3">de apertura y mantenimiento de cuenta</p>
               </div>
-              <button class="btn-conv">ABRÍ TU CUENTA</button>
+              <button routerLink="/create-user" class="btn-conv">ABRÍ TU CUENTA</button>
             </div>
           </section>
         
@@ -162,7 +80,7 @@
                         </div>
                     </div>
                 </div>
-            <button class="btnultimo">EMPEZAR AHORA</button>
+            <button routerLink="/create-user" class="btnultimo">EMPEZAR AHORA</button>
           </div>
         
 

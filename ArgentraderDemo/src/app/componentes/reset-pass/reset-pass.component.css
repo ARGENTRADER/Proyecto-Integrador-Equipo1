@@ -1,0 +1,8 @@
+@media screen and (max-width: 370px){
+    
+  .div-forgot {
+      display: grid;
+      place-items: center;
+      margin: auto;
+  }
+}

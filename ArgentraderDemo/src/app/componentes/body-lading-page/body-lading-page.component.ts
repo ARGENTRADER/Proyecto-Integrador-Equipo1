@@ -6,5 +6,4 @@ import { Component } from '@angular/core';
   styleUrls: ['./body-lading-page.component.css']
 })
 export class BodyLadingPageComponent {
-
 }

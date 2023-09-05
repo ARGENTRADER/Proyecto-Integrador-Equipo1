@@ -35,7 +35,17 @@ import { SettingsComponent } from './componentes/settings/settings.component';
 import { MyAccountComponent } from './componentes/my-account/my-account.component';
 import { NotFoundComponent } from './componentes/not-found/not-found.component'
 import { LandingPageComponent } from './paginas/landing-page/landing-page.component';
-import { ReturnBtnComponent } from './componentes/return-btn/return-btn.component'
+import { ReturnBtnComponent } from './componentes/return-btn/return-btn.component';
+import { CarrouselComponent } from './componentes/carrousel/carrousel.component'
+import { FooterLandingComponent } from './componentes/footer-landing/footer-landing.component';
+import { HeaderLandingComponent } from './componentes/header-landing/header-landing.component';
+import { NavbarComunComponent } from './componentes/navbar-comun/navbar-comun.component';
+import { GetNewPassComponent } from './paginas/get-new-pass/get-new-pass.component';
+import { VerifyRegisterComponent } from './componentes/verify-register/verify-register.component';
+import { VerifyRegisterStateComponent } from './componentes/verify-register-state/verify-register-state.component';
+import { VerifyRegisterPageComponent } from './paginas/verify-register-page/verify-register-page.component';
+import { VerifyRegisterStatePageComponent } from './paginas/verify-register-state-page/verify-register-state-page.component';
+import { LogoutButtonComponent } from './componentes/logout-button/logout-button.component';
 
 @NgModule({
   declarations: [
@@ -70,7 +80,18 @@ import { ReturnBtnComponent } from './componentes/return-btn/return-btn.componen
     MyAccountComponent,
     NotFoundComponent,
     LandingPageComponent,
-    ReturnBtnComponent
+    ReturnBtnComponent,
+    CarrouselComponent,
+    FooterLandingComponent,
+    BodyLadingPageComponent,
+    HeaderLandingComponent,
+    NavbarComunComponent,
+    GetNewPassComponent,
+    VerifyRegisterComponent,
+    VerifyRegisterStateComponent,
+    VerifyRegisterPageComponent,
+    VerifyRegisterStatePageComponent,
+    LogoutButtonComponent
   ],
   imports: [
     BrowserModule,

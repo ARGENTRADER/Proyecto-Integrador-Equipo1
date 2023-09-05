@@ -1,6 +1,6 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable @angular-eslint/no-empty-lifecycle-method */
 /* eslint-disable @typescript-eslint/no-empty-function */
-import { ArrayType } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
 import { CotizacionesServiceService } from 'app/services/cotizaciones-service.service';
 
@@ -9,16 +9,21 @@ import { CotizacionesServiceService } from 'app/services/cotizaciones-service.se
   templateUrl: './cotizations-table.component.html',
   styleUrls: ['./cotizations-table.component.css']
 })
-export class CotizationsTableComponent implements OnInit {
-  cotizationsData:any;
-  constructor(private cotizacionesService:CotizacionesServiceService){}
-  
 
+// interface CotizationsData {
+//   titulos: any[]; // Ajusta el tipo adecuado para 'titulos'
+// }
+
+export class CotizationsTableComponent implements OnInit {
+  
+  constructor(private cotizacionesService:CotizacionesServiceService){}
+  cotizationsData:any;
   ngOnInit(): void{
+    this.refrescar_cotizaciones();
   }
   refrescar_cotizaciones(){
-    this.cotizacionesService.getCotizaciones().subscribe(cotizationsData =>{this.cotizationsData = cotizationsData});
-    console.log(this.cotizationsData);
+  //this.cotizacionesService.getCotizaciones().subscribe(cotizationsData =>{console.log(cotizationsData)});
+  this.cotizacionesService.getCotizaciones().subscribe(cotizationsData => {this.cotizationsData = cotizationsData["titulos"]});
+  console.log(this.cotizationsData);
   }
-
 }

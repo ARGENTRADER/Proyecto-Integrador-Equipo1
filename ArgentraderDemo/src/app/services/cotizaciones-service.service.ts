@@ -10,7 +10,8 @@ export class CotizacionesServiceService {
   
   constructor(private http:HttpClient){}
   
-  getCotizaciones():Observable<unknown>{
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  getCotizaciones():Observable<any>{
     return this.http.get(this.url); 
   }
   }

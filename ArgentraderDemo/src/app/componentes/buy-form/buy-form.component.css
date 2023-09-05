@@ -71,8 +71,6 @@ input {
   margin-top: 25px;
 }
 
-
-
 .labels {
   background-color: #fff;
 }
@@ -92,3 +90,11 @@ input {
   text-decoration: none;
 }
 
+@media screen and (max-width: 310px) {
+  .button-spacing{
+    margin-right: 0px;
+  }
+  td > button {
+    display: flex;
+  }
+}
