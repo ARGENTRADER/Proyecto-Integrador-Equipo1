@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComunComponent } from './componentes/header-comun/header-comun.component';
@@ -8,7 +7,6 @@ import { FooterComunComponent } from './componentes/footer-comun/footer-comun.co
 import { FormCreateUserComponent } from './componentes/form-create-user/form-create-user.component';
 import { TopButtonComponent } from './componentes/top-button/top-button.component';
 import { ExitButtonComponent } from './componentes/exit-button/exit-button.component';
-import { LoginComponent } from './paginas/login/login.component';
 import { CreateUserComponent } from './paginas/create-user/create-user.component';
 import { HomeCotizacionesComponent } from './paginas/home-cotizaciones/home-cotizaciones.component';
 import { MiCuentaComponent } from './paginas/mi-cuenta/mi-cuenta.component';
@@ -21,7 +19,6 @@ import { ChoosePasswordComponent } from './paginas/choose-password/choose-passwo
 import { ChooseResultComponent } from './paginas/choose-result/choose-result.component';
 import { ResetPassComponent } from './componentes/reset-pass/reset-pass.component';
 import { BodyLadingPageComponent } from './componentes/body-lading-page/body-lading-page.component';
-import { LoginFormComponent } from './componentes/login-form/login-form.component';
 import { GetPassComponent } from './componentes/get-pass/get-pass.component';
 import { ResetPassStateComponent } from './componentes/reset-pass-state/reset-pass-state.component';
 import { VerifyCodeComponent } from './componentes/verify-code/verify-code.component';
@@ -41,6 +38,8 @@ import { FooterLandingComponent } from './componentes/footer-landing/footer-land
 import { HeaderLandingComponent } from './componentes/header-landing/header-landing.component';
 import { NavbarComunComponent } from './componentes/navbar-comun/navbar-comun.component';
 import { GetNewPassComponent } from './paginas/get-new-pass/get-new-pass.component';
+import { LoginComponent } from './paginas/login/login.component';
+import { AuthModule } from './componentes/auth/auth.module';
 
 @NgModule({
   declarations: [
@@ -50,7 +49,6 @@ import { GetNewPassComponent } from './paginas/get-new-pass/get-new-pass.compone
     FormCreateUserComponent,
     TopButtonComponent,
     ExitButtonComponent,
-    LoginComponent,
     CreateUserComponent,
     HomeCotizacionesComponent,
     MiCuentaComponent,
@@ -63,7 +61,6 @@ import { GetNewPassComponent } from './paginas/get-new-pass/get-new-pass.compone
     ChooseResultComponent,
     ResetPassComponent,
     BodyLadingPageComponent,
-    LoginFormComponent,
     GetPassComponent,
     ResetPassStateComponent,
     VerifyCodeComponent,
@@ -81,13 +78,15 @@ import { GetNewPassComponent } from './paginas/get-new-pass/get-new-pass.compone
     BodyLadingPageComponent,
     HeaderLandingComponent,
     NavbarComunComponent,
-    GetNewPassComponent
+    GetNewPassComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
-  ],
+    HttpClientModule,
+    AuthModule
+    ],
   providers: [
     CotizacionesServiceService
   ],
