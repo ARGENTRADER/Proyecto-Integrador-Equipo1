@@ -36,6 +36,11 @@ import { FooterLandingComponent } from './componentes/footer-landing/footer-land
 import { HeaderLandingComponent } from './componentes/header-landing/header-landing.component';
 import { NavbarComunComponent } from './componentes/navbar-comun/navbar-comun.component';
 import { GetNewPassComponent } from './paginas/get-new-pass/get-new-pass.component';
+import { VerifyRegisterComponent } from './componentes/verify-register/verify-register.component';
+import { VerifyRegisterStateComponent } from './componentes/verify-register-state/verify-register-state.component';
+import { VerifyRegisterPageComponent } from './paginas/verify-register-page/verify-register-page.component';
+import { VerifyRegisterStatePageComponent } from './paginas/verify-register-state-page/verify-register-state-page.component';
+import { LogoutButtonComponent } from './componentes/logout-button/logout-button.component';
 import { LoginComponent } from './paginas/login/login.component';
 import { AuthModule } from './componentes/auth/auth.module';
 import { RegisterModule } from './componentes/register/register.module';
@@ -76,9 +81,7 @@ import { CreateUserComponent } from './paginas/create-user/create-user.component
     BodyLadingPageComponent,
     HeaderLandingComponent,
     NavbarComunComponent,
-    GetNewPassComponent,
-    LoginComponent,
-    CreateUserComponent
+    GetNewPassComponent
   ],
   imports: [
     BrowserModule,
