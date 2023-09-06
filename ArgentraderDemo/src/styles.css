@@ -10,6 +10,42 @@ body {
   margin-bottom: 40px;
 }
 
+.ng-valid[required], .ng-valid {
+  border: 3px solid #42A948; /* green */
+  transition: 0.3s;
+}
+
+.ng-invalid:not(form)  {
+  border-left: 5px solid #a94442; /* red */
+}
+
+.alert div {
+  /* background-color: none; */
+  color: #820000;
+  padding: 1rem;
+  /* margin-bottom: 1rem; */
+}
+
+.alert-danger{
+  background-color: transparent;
+  border: none;
+  color: #f11717;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+  margin-bottom: .5rem;
+}
+
+select {
+  width: 100%;
+  padding: .5rem;
+}
+
 /*
 
  stlye-ajustes-Julian 
