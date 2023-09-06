@@ -4,7 +4,7 @@
 /* eslint-disable @typescript-eslint/no-empty-function */
 /* eslint-disable @angular-eslint/no-empty-lifecycle-method */
 import { Component, OnInit} from '@angular/core';
-import { FormBuilder, FormControl, FormControlName} from '@angular/forms';
+import { FormBuilder} from '@angular/forms';
 import{Validators} from '@angular/forms';
 
 @Component({
@@ -13,9 +13,7 @@ import{Validators} from '@angular/forms';
   styleUrls: ['./login-form.component.css']
 })
 export class LoginFormComponent implements OnInit {
-text:any="";
-flag="";
-validControl=false;
+
     loginForm= this.formBuilder.group({
       email: ['',[Validators.email, Validators.required]],
       password: ['', Validators.required]

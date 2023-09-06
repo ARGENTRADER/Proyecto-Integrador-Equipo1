@@ -4,10 +4,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComunComponent } from './componentes/header-comun/header-comun.component';
 import { FooterComunComponent } from './componentes/footer-comun/footer-comun.component';
-import { FormCreateUserComponent } from './componentes/form-create-user/form-create-user.component';
 import { TopButtonComponent } from './componentes/top-button/top-button.component';
 import { ExitButtonComponent } from './componentes/exit-button/exit-button.component';
-import { CreateUserComponent } from './paginas/create-user/create-user.component';
 import { HomeCotizacionesComponent } from './paginas/home-cotizaciones/home-cotizaciones.component';
 import { MiCuentaComponent } from './paginas/mi-cuenta/mi-cuenta.component';
 import { MiPortfolioComponent } from './paginas/mi-portfolio/mi-portfolio.component';
@@ -40,16 +38,16 @@ import { NavbarComunComponent } from './componentes/navbar-comun/navbar-comun.co
 import { GetNewPassComponent } from './paginas/get-new-pass/get-new-pass.component';
 import { LoginComponent } from './paginas/login/login.component';
 import { AuthModule } from './componentes/auth/auth.module';
+import { RegisterModule } from './componentes/register/register.module';
+import { CreateUserComponent } from './paginas/create-user/create-user.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComunComponent,
     FooterComunComponent,
-    FormCreateUserComponent,
     TopButtonComponent,
     ExitButtonComponent,
-    CreateUserComponent,
     HomeCotizacionesComponent,
     MiCuentaComponent,
     MiPortfolioComponent,
@@ -79,13 +77,15 @@ import { AuthModule } from './componentes/auth/auth.module';
     HeaderLandingComponent,
     NavbarComunComponent,
     GetNewPassComponent,
-    LoginComponent
+    LoginComponent,
+    CreateUserComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    AuthModule
+    AuthModule,
+    RegisterModule
     ],
   providers: [
     CotizacionesServiceService
