@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-empty-function */
 /* eslint-disable @angular-eslint/no-empty-lifecycle-method */
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, PatternValidator, Validators } from '@angular/forms';
+import { FormBuilder,  Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-form-create-user',
