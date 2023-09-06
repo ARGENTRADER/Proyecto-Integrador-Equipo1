@@ -81,7 +81,16 @@ import { CreateUserComponent } from './paginas/create-user/create-user.component
     BodyLadingPageComponent,
     HeaderLandingComponent,
     NavbarComunComponent,
-    GetNewPassComponent
+    GetNewPassComponent,
+    CreateUserComponent,
+    VerifyRegisterComponent,
+    VerifyRegisterPageComponent,
+    VerifyRegisterPageComponent,
+    VerifyRegisterStateComponent,
+    VerifyRegisterStatePageComponent,
+    LogoutButtonComponent,
+    LoginComponent
+
   ],
   imports: [
     BrowserModule,
