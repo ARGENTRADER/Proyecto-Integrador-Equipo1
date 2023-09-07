@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-empty-function */
 /* eslint-disable @angular-eslint/no-empty-lifecycle-method */
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder,  Validators } from '@angular/forms';
+import { FormBuilder, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-form-create-user',
@@ -14,11 +14,11 @@ export class FormCreateUserComponent implements OnInit {
     nombres: ['',[Validators.required]],
     apellidos: ['', Validators.required],
     fechaNacimiento: ['',[Validators.required]],
-    tipoDni: ['', Validators.required],
-    nroDni: ['', Validators.required, Validators.pattern(/^([0-9])*$/)],
+    tipoDni: ['', [Validators.required]],
+    nroDni: ['', [Validators.required, Validators.pattern('^([0-9])*$')]],
     email: ['',[Validators.required, Validators.email]],
     // eslint-disable-next-line no-useless-escape
-    password: ['', Validators.required, Validators.minLength(8)],
+    password: ['', [Validators.required, Validators.pattern('.{8,}$')]],
     repeatedPassword: ['',[Validators.required]]
   });
   get nombres() { return this.createUserForm.controls.nombres;}

@@ -4,78 +4,80 @@
       <h2 class="text-center mb-4 text-white">Crear usuario</h2>
       <form [formGroup]="createUserForm">
         <div class="mb-3">
-          <label for="nombre" class="form-label text-white">Nombres:</label>
+          <label for="nombres" class="form-label text-white">Nombres:</label>
           <input type="text" formControlName="nombres" class="form-control" id="nombres" placeholder="Nombres" required>
             <div style="color:brown" *ngIf="(nombres.dirty || nombres.touched) && nombres.errors?.['required']"class="alert">
-              "Ingrese sus nombres, por favor."
+              Ingrese sus nombres, por favor.
             </div>
         </div>
         <div class="mb-3">
           <label for="apellidos" class="form-label text-white">Apellidos:</label>
           <input type="text" formControlName="apellidos"  class="form-control" id="apellidos" placeholder="Apellidos" required>
             <div style="color:brown" *ngIf="(apellidos.dirty || apellidos.touched) && apellidos.errors?.['required']"class="alert">
-              "Ingrese sus apellidos, por favor."
+              Ingrese sus apellidos, por favor.
             </div>
         </div>
         <div class="mb-3">
           <label for="fechaNacimiento" class="form-label text-white">Fecha de Nacimiento:</label>
           <input type="date" formControlName="fechaNacimiento"  class="form-control" id="fechaNacimiento" required>
             <div style="color:brown" *ngIf="(fechaNacimiento.dirty || fechaNacimiento.touched) && fechaNacimiento.errors?.['required']"class="alert">
-              "Seleccione su fecha de nacimiento, por favor."
+              Seleccione su fecha de nacimiento, por favor.
             </div>
         </div>
         <div class="mb-3">
           <label for="tipoDni" class="form-label text-white">Tipo de Documento:</label><br>
           <select name="tipoDni" formControlName="tipoDni"  id="tipoDni" class="form-select mb-3">
-            <div style="color:brown" *ngIf="(tipoDni.dirty || tipoDni.touched) && tipoDni.errors?.['required']"class="alert">
-              "Seleccione tipo de dni, por favor."
+            <div style="color:brown" *ngIf="(tipoDni.dirty || tipoDni.touched) && tipoDni.invalid "class="alert">
+              Seleccione tipo de dni, por favor.
             </div>
             <option value="Documento Nacional de Identidad" selected>D.N.I.</option>
             <option value="Pasaporte">Pasaporte</option>
             <option value="Libreta Cívica">Libreta Cívica</option>
             <option value="Libreta de Enrolamiento">Libreta de Enrolamiento</option>
           </select>
-          <label for="nombre" class="form-label text-white">Número de Documento:</label>
-          <input pattern="/^([0-9])*$/" formControlName="nroDni"  class="form-control" id="documentoValor" placeholder="N° de Documento" required>
+          </div>
+          <div class="mb-3">
+          <label for="documentoValor" class="form-label text-white">Número de Documento:</label>
+          <input pattern="^([0-9])*$" formControlName="nroDni"  class="form-control" id="documentoValor" placeholder="N° de Documento" required>
           <div  style="color:brown" *ngIf="(nroDni.dirty || nroDni.touched) && nroDni.errors?.['required']"class="alert">
-            "Coloque su número de dni, por favor."
+            Coloque su número de dni, por favor.
           </div> 
-          <div style="color:brown" *ngIf="nroDni.errors?.['pattern']" class="alert">
-            "Solo números."
+          <div style="color:brown" *ngIf="nroDni.errors?.['pattern'] " class="alert">
+            Solo números.
           </div>  
         </div>
         <div class="mb-3">
           <label for="email" formControlName="email"  class="form-label text-white">Correo electrónico:</label>
           <input type="email" formControlName="email" class="form-control" id="email" placeholder="Correo@ejemplo.com" required>
           <div style="color:brown" *ngIf="(email.dirty || email.touched) && email.errors?.['required']"class="alert">
-            "Ingrese su email, por favor."
+            Ingrese su email, por favor.
           </div>
           <div style="color:brown" *ngIf="(email.dirty && email.touched) && email.invalid" class="alert">
-            "Ingrese un email válido, por favor."
+            Ingrese un email válido, por favor.
           </div>
         </div>
         <div class="mb-3">
           <label for="contrasena" class="form-label text-white">Contraseña:</label>
-          <input type="password" formControlName="password"  class="form-control" id="contrasena" placeholder="Contraseña" required>
+          <input pattern=".{8,}$" type="password" formControlName="password"  class="form-control" id="contrasena" placeholder="Contraseña" required>
           <div style="color:brown" *ngIf="(password.dirty || password.touched) && password.errors?.['required']"class="alert">
-            "Ingrese su contraseña, por favor."
+            Ingrese su contraseña, por favor.
           </div>
-          <div style="color:brown" *ngIf="password.errors?.['minlength'] "class="alert">
-            "Los caracteres deben ser 8 como mínimo."
+          <div style="color:brown" *ngIf="password.errors?.['pattern']" class="alert">
+            Los caracteres deben ser 8 como mínimo.
           </div>
         </div>
         <div class="mb-3">
           <label for="confirmar-contrasena" class="form-label text-white">Confirmar contraseña:</label>
           <input type="password" formControlName="repeatedPassword"  class="form-control" id="confirmar-contrasena" placeholder="Confirmar contraseña" required>
           <div style="color:brown" *ngIf="(repeatedPassword.dirty || repeatedPassword.touched) && repeatedPassword.errors?.['required']"class="alert">
-            "Ingrese su contraseña, por favor."
+            Ingrese su contraseña, por favor.
           </div>
           <div style="color:brown" *ngIf="(repeatedPassword.value !== password.value)"class="alert">
-            "Las contraseñas no coinciden."
+            Las contraseñas no coinciden.
           </div>
         </div>
         <div class="mb-3">
-          <button type="submit" class="btn btn-light div-forgot">Registrarse</button>
+          <button type="submit" [disabled]="!createUserForm.valid" class="btn btn-light div-forgot">Registrarse</button>
         </div>
         <p class="text-center text-white">¿Ya tenés una cuenta? <a routerLink="/login" class="text-white">Iniciá sesión</a></p>
       </form>
