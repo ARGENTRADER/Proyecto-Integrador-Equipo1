@@ -5,18 +5,24 @@
       <form [formGroup]="createUserForm">
         <div class="mb-3">
           <label for="nombres" class="form-label text-white">Nombres:</label>
-          <input type="text" formControlName="nombres" class="form-control" id="nombres" placeholder="Nombres" required>
+          <input pattern="^[A-ZÑa-zñáéíóúÁÉÍÓÚ'° ]+$" type="text" formControlName="nombres" class="form-control" id="nombres" placeholder="Nombres" required>
             <div style="color:brown" *ngIf="(nombres.dirty || nombres.touched) && nombres.errors?.['required']"class="alert">
               Ingrese sus nombres, por favor.
+            </div>
+            <div style="color:brown" *ngIf="nombres.errors?.['pattern']" class="alert">
+              Sólo se permiten letras.
             </div>
         </div>
         <div class="mb-3">
           <label for="apellidos" class="form-label text-white">Apellidos:</label>
-          <input type="text" formControlName="apellidos"  class="form-control" id="apellidos" placeholder="Apellidos" required>
+          <input pattern="^[A-ZÑa-zñáéíóúÁÉÍÓÚ'° ]+$" type="text" formControlName="apellidos"  class="form-control" id="apellidos" placeholder="Apellidos">
             <div style="color:brown" *ngIf="(apellidos.dirty || apellidos.touched) && apellidos.errors?.['required']"class="alert">
               Ingrese sus apellidos, por favor.
             </div>
-        </div>
+            <div style="color:brown" *ngIf="apellidos.errors?.['pattern']"class="alert">
+            Sólo se permiten letras.
+            </div>
+          </div>
         <div class="mb-3">
           <label for="fechaNacimiento" class="form-label text-white">Fecha de Nacimiento:</label>
           <input type="date" formControlName="fechaNacimiento"  class="form-control" id="fechaNacimiento" required>
@@ -52,7 +58,7 @@
           <div style="color:brown" *ngIf="(email.dirty || email.touched) && email.errors?.['required']"class="alert">
             Ingrese su email, por favor.
           </div>
-          <div style="color:brown" *ngIf="(email.dirty && email.touched) && email.invalid" class="alert">
+          <div style="color:brown" *ngIf="(email.dirty || email.touched) && email.invalid && !email.errors?.['required']" class="alert">
             Ingrese un email válido, por favor.
           </div>
         </div>
@@ -72,7 +78,7 @@
           <div style="color:brown" *ngIf="(repeatedPassword.dirty || repeatedPassword.touched) && repeatedPassword.errors?.['required']"class="alert">
             Ingrese su contraseña, por favor.
           </div>
-          <div style="color:brown" *ngIf="(repeatedPassword.value !== password.value)"class="alert">
+          <div style="color:brown" *ngIf="(repeatedPassword.dirty || repeatedPassword.touched) && repeatedPassword.invalid && !repeatedPassword.errors?.['required']"class="alert">
             Las contraseñas no coinciden.
           </div>
         </div>

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-return-btn',
@@ -7,4 +8,11 @@ import { Component } from '@angular/core';
 })
 export class ReturnBtnComponent {
 
+  constructor(
+    private location: Location
+  ) {}
+
+  goBack() {
+    this.location.back()
+  }
 }

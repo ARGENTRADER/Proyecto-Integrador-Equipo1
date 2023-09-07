@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormCreateUserComponent } from './form-create-user/form-create-user.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { AppRoutingModule } from 'app/app-routing.module';
 import { RouterModule } from '@angular/router';
 
 
@@ -13,6 +14,7 @@ import { RouterModule } from '@angular/router';
   imports: [
     CommonModule,
     ReactiveFormsModule,
+    AppRoutingModule,
     RouterModule
   ],
   exports:[
