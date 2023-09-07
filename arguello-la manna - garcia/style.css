@@ -238,14 +238,14 @@ body {
     border: 0.125em solid #99bbdb;
     background-color: #99bbdb;
     border-radius: 0.9375em;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 600;
     line-height: normal;
     cursor: pointer;
     color:#1a1a1a;
     text-decoration: none;
     font-weight: bold;
-
+padding: 20px;
 }
 
 .btn-academia:hover{
@@ -284,13 +284,14 @@ body {
     border: 0.125em solid #99bbdb;
     background-color: #99bbdb;
     border-radius: 0.9375em;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 600;
     line-height: normal;
     cursor: pointer;
     color:#1a1a1a;
     text-decoration: none;
     font-weight: bold;
+    padding: 20px;
 }
 
 .btn-conv:hover{
@@ -341,7 +342,7 @@ body {
     border: 0.125em solid #99bbdb;
     background-color: #99bbdb;
     border-radius: 0.9375em;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 600;
     line-height: normal;
     cursor: pointer;
@@ -349,6 +350,7 @@ body {
     text-decoration: none;
     font-weight: bold;
     margin-bottom: 150px;
+    padding: 20px;
 }
 
 .btnultimo:hover{
@@ -404,7 +406,8 @@ footer {
         text-justify: distribute;
     }
     .container {
-        gap: 20px;
+        padding-top: 50px;
+        gap: 60px;
     }
     .mod-a img{
         visibility: hidden;
@@ -457,4 +460,8 @@ footer {
 
 #navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.vertical > p {
+    margin-bottom: 35px;
 }

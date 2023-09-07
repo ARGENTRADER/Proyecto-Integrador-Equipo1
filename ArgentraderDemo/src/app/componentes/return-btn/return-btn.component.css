@@ -1,0 +1,20 @@
+button {
+  position: fixed;
+  bottom: 120px;
+  right: 20px;
+  width: 75px;
+  padding: 10px 10px;
+  background-color: #1a1a1a;
+  --bs-btn-line-height: 1;
+}
+
+@media screen and (max-width: 350px) {
+  button {
+    --bs-btn-line-height: 0.8;
+    width: 60px;
+    font-size: 0.85rem;
+    bottom: 110px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}

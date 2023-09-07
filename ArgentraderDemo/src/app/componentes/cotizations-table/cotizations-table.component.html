@@ -1,0 +1,46 @@
+<div class="container-fluid mt-5">
+    <form class="buy-form mb-5">
+      <div class="table-responsive">
+        <table class="table" id="tabla-cotizaciones">
+        <thead>
+        <tr>
+          <th scope="col">Símbolo</th>
+          <th scope="col">Nombre</th>
+          <th scope="col">Último operado</th>
+          <th scope="col">Cantidad compra diaria</th>
+          <th scope="col">Precio compra actual</th>
+          <th scope="col">Precio venta actual</th>
+          <th scope="col">Cantidad venta diaria</th>
+          <th scope="col">Apertura</th>
+          <th scope="col">Mínimo diario</th>
+          <th scope="col">Máximo diario</th>
+          <th scope="col">Último cierre</th>
+          <th scope="col">Gráfico</th>
+          <th scope="col"></th> 
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let item of cotizationsData">
+          <td>{{item.simbolo}}</td>
+          <td>{{item.descripcion}}</td>
+          <td>{{item.ultimoPrecio}}</td>
+          <td>{{item.puntas?item.puntas.cantidadCompra:"-"}}</td>
+          <td>{{item.puntas?item.puntas.precioCompra:"-"}}</td>
+          <td>{{item.puntas?item.puntas.precioVenta:"-"}}</td>
+          <td>{{item.puntas?item.puntas.cantidadVenta:"-"}}</td>
+          <td>{{item.apertura}}</td>
+          <td>{{item.minimo}}</td>
+          <td>{{item.maximo}}</td>
+          <td>{{item.ultimoCierre}}</td>
+          <td><img src="../../../assets/images/Logos/cotizacion-prueba.svg" alt="" class="img-fluid cotizacion-img"></td>
+          <td class="centered-cell">
+            <button  [routerLink]="['/buy-action', item.simbolo]" [disabled]="!item.puntas?.precioVenta" class="btn btn-primary">Comprar</button>
+          </td>
+        </tr>
+        </tbody>
+        </table>
+      </div>
+    </form>
+  </div>
+<div class="saldo-label">Saldo disponible: $500000ARS</div>
+
