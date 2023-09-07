@@ -25,7 +25,6 @@ import { CotizacionesServiceService } from './services/cotizaciones-service.serv
 import { HttpClientModule } from '@angular/common/http';
 import { NotFoundPageComponent } from './paginas/not-found-page/not-found.component';
 import { MyPortfolioComponent } from './componentes/my-portfolio/my-portfolio.component';
-import { BuyFormComponent } from './componentes/buy-form/buy-form.component';
 import { SettingsComponent } from './componentes/settings/settings.component';
 import { MyAccountComponent } from './componentes/my-account/my-account.component';
 import { NotFoundComponent } from './componentes/not-found/not-found.component'
@@ -45,6 +44,7 @@ import { LoginComponent } from './paginas/login/login.component';
 import { AuthModule } from './componentes/auth/auth.module';
 import { RegisterModule } from './componentes/register/register.module';
 import { CreateUserComponent } from './paginas/create-user/create-user.component';
+import { BuyFormModuleModule } from './componentes/buy-form-module/buy-form-module.module';
 
 @NgModule({
   declarations: [
@@ -70,7 +70,6 @@ import { CreateUserComponent } from './paginas/create-user/create-user.component
     CotizationsTableComponent,
     NotFoundPageComponent,
     MyPortfolioComponent,
-    BuyFormComponent,
     SettingsComponent,
     MyAccountComponent,
     NotFoundComponent,
@@ -97,7 +96,9 @@ import { CreateUserComponent } from './paginas/create-user/create-user.component
     AppRoutingModule,
     HttpClientModule,
     AuthModule,
-    RegisterModule
+    RegisterModule,
+    BuyFormModuleModule
+
     ],
   providers: [
     CotizacionesServiceService
