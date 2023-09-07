@@ -8,10 +8,10 @@
               <img src="../../../assets/images/Logos/logo-de-prueba.png" alt="imagen del logo de Bitcoin" class="labels buy-img">
             </th>
             <th scope="col" colspan="2">
-              <p class="labels"><strong class="labels">BITCOIN</strong></p>
+              <p class="labels"><strong class="labels"></strong>{{item}}</p>
             </th>
             <th scope="col">
-              <p class="labels"><strong class="labels">BTC</strong></p>
+              <p class="labels"><strong class="labels">{{item}}</strong></p>
             </th>
           </tr>
         </thead>
@@ -22,8 +22,16 @@
               <label for="precio" id="precio-actual" class="labels">$1200</label>
             </td>
             <td colspan="2">
-              <label for="cantidad" class="labels">Cantidad:</label>
-              <input type="text" id="cantidad" name="cantidad" class="labels">
+              <form [formGroup]="buyForm" action="">
+                <label for="cantidad" class="labels">Cantidad:</label>
+                <input pattern="^[0-9]+$" type="text" formControlName="cantidad" id="cantidad" name="cantidad" class="labels">
+                <div style="color:brown" *ngIf="(cantidad.dirty || cantidad.touched) && cantidad.errors?.['required']"class="alert">
+                  "Ingrese la cantidad, por favor."
+                </div>
+                <div style="color:brown" *ngIf="(cantidad.dirty || cantidad.touched) && cantidad.errors?.['pattern']"class="alert">
+                  "Solo puede ingresar números enteros, por favor."
+                </div>
+              </form>
             </td>
             <td>
             </td>
@@ -61,7 +69,7 @@
           </tr>
           <tr>
             <td class="centered-cell" colspan="4">
-              <button routerLink="/home" type="submit" class="btn btn-primary button-spacing cell-spacing">Confirmar</button>
+              <button routerLink="/home" [disabled]="!buyForm.valid" type="submit" class="btn btn-primary button-spacing cell-spacing">Confirmar</button>
               <button routerLink="/home" type="button" class="btn btn-secondary cell-spacing">Cancelar</button>
             </td>
           </tr>
