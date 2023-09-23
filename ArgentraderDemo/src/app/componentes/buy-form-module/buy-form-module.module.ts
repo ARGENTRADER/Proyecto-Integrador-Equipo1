@@ -1,24 +1,22 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormCreateUserComponent } from './form-create-user/form-create-user.component';
+import { BuyFormComponent } from './buy-form/buy-form.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import { AppRoutingModule } from 'app/app-routing.module';
 import { RouterModule } from '@angular/router';
 
 
 
 @NgModule({
   declarations: [
-    FormCreateUserComponent
+    BuyFormComponent
   ],
   imports: [
     CommonModule,
     ReactiveFormsModule,
-    AppRoutingModule,
     RouterModule
   ],
-  exports:[
-    FormCreateUserComponent
+  exports: [
+    BuyFormComponent
   ]
 })
-export class RegisterModule { }
+export class BuyFormModuleModule { }

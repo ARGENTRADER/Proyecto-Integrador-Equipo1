@@ -34,7 +34,7 @@
           <td>{{item.ultimoCierre}}</td>
           <td><img src="../../../assets/images/Logos/cotizacion-prueba.svg" alt="" class="img-fluid cotizacion-img"></td>
           <td class="centered-cell">
-            <button routerLink="/buy-action" class="btn btn-primary">Comprar</button>
+            <button  [routerLink]="['/buy-action', item.simbolo]" [disabled]="!item.puntas?.precioVenta" class="btn btn-primary">Comprar</button>
           </td>
         </tr>
         </tbody>

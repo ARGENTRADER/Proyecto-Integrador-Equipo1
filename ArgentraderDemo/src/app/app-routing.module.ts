@@ -52,6 +52,7 @@ const routes: Routes = [
     path: 'buy-action',
     component: BuyFormPageComponent
   },
+  { path: 'buy-action/:id', component: BuyFormPageComponent },
   {
     path: 'my-account',
     component: MiCuentaComponent
