@@ -45,6 +45,7 @@ import { AuthModule } from './componentes/auth/auth.module';
 import { RegisterModule } from './componentes/register/register.module';
 import { CreateUserComponent } from './paginas/create-user/create-user.component';
 import { BuyFormModuleModule } from './componentes/buy-form-module/buy-form-module.module';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -97,7 +98,8 @@ import { BuyFormModuleModule } from './componentes/buy-form-module/buy-form-modu
     HttpClientModule,
     AuthModule,
     RegisterModule,
-    BuyFormModuleModule
+    BuyFormModuleModule,
+    ReactiveFormsModule
 
     ],
   providers: [

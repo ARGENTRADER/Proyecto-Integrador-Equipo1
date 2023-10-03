@@ -10,11 +10,27 @@
         <div class="mb-3">
           <label for="nombre" class="form-label text-white">Apellidos:</label>
           <input type="text" class="form-control" id="apellidos" placeholder="Apellidos" required>
-        </div>
+        <!-- </div>
         <div class="mb-3">
           <label for="fechaDeNacimiento" class="form-label text-white">Fecha de Nacimiento:</label>
           <input type="date" class="form-control" id="fechaDeNacimiento" required>
-        </div>
+        </div> -->
+        <form [formGroup]="formulario">
+          <div class="mb-3">
+            <label for="fechaDeNacimiento" class="form-label text-white">Fecha de Nacimiento (dd/mm/yyyy):</label>
+            <input type="text" class="form-control" id="fechaDeNacimiento" formControlName="fechaDeNacimiento">
+            <div *ngIf="formulario.get('fechaDeNacimiento').hasError('required')" class="text-danger">
+              La fecha de nacimiento es obligatoria.
+            </div>
+            <div *ngIf="formulario.get('fechaDeNacimiento').hasError('pattern')" class="text-danger">
+              El formato de fecha debe ser dd/mm/yyyy.
+            </div>
+            <div *ngIf="formulario.get('fechaDeNacimiento').hasError('formatoInvalido')" class="text-danger">
+              Fecha de nacimiento no válida. Por favor, introduzca una fecha válida.
+            </div>
+          </div>
+        </form>
+        
         <div class="mb-3">
           <label for="tipoDni" class="form-label text-white">Tipo de Documento:</label><br>
           <select name="tipoDni" id="tipoDni" class="form-select mb-3">
