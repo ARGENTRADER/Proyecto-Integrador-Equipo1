@@ -18,6 +18,7 @@ export class CotizationsTableComponent implements OnInit {
   
   constructor(private cotizacionesService:CotizacionesServiceService){}
   cotizationsData:any;
+  sellBuy:any=this.cotizacionesService
   ngOnInit(): void{
     this.refrescar_cotizaciones();
   }

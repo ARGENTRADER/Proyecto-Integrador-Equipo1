@@ -1,15 +1,11 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComunComponent } from './componentes/header-comun/header-comun.component';
 import { FooterComunComponent } from './componentes/footer-comun/footer-comun.component';
-import { FormCreateUserComponent } from './componentes/form-create-user/form-create-user.component';
 import { TopButtonComponent } from './componentes/top-button/top-button.component';
 import { ExitButtonComponent } from './componentes/exit-button/exit-button.component';
-import { LoginComponent } from './paginas/login/login.component';
-import { CreateUserComponent } from './paginas/create-user/create-user.component';
 import { HomeCotizacionesComponent } from './paginas/home-cotizaciones/home-cotizaciones.component';
 import { MiCuentaComponent } from './paginas/mi-cuenta/mi-cuenta.component';
 import { MiPortfolioComponent } from './paginas/mi-portfolio/mi-portfolio.component';
@@ -21,7 +17,6 @@ import { ChoosePasswordComponent } from './paginas/choose-password/choose-passwo
 import { ChooseResultComponent } from './paginas/choose-result/choose-result.component';
 import { ResetPassComponent } from './componentes/reset-pass/reset-pass.component';
 import { BodyLadingPageComponent } from './componentes/body-lading-page/body-lading-page.component';
-import { LoginFormComponent } from './componentes/login-form/login-form.component';
 import { GetPassComponent } from './componentes/get-pass/get-pass.component';
 import { ResetPassStateComponent } from './componentes/reset-pass-state/reset-pass-state.component';
 import { VerifyCodeComponent } from './componentes/verify-code/verify-code.component';
@@ -30,7 +25,6 @@ import { CotizacionesServiceService } from './services/cotizaciones-service.serv
 import { HttpClientModule } from '@angular/common/http';
 import { NotFoundPageComponent } from './paginas/not-found-page/not-found.component';
 import { MyPortfolioComponent } from './componentes/my-portfolio/my-portfolio.component';
-import { BuyFormComponent } from './componentes/buy-form/buy-form.component';
 import { SettingsComponent } from './componentes/settings/settings.component';
 import { MyAccountComponent } from './componentes/my-account/my-account.component';
 import { NotFoundComponent } from './componentes/not-found/not-found.component'
@@ -46,17 +40,19 @@ import { VerifyRegisterStateComponent } from './componentes/verify-register-stat
 import { VerifyRegisterPageComponent } from './paginas/verify-register-page/verify-register-page.component';
 import { VerifyRegisterStatePageComponent } from './paginas/verify-register-state-page/verify-register-state-page.component';
 import { LogoutButtonComponent } from './componentes/logout-button/logout-button.component';
+import { LoginComponent } from './paginas/login/login.component';
+import { AuthModule } from './componentes/auth/auth.module';
+import { RegisterModule } from './componentes/register/register.module';
+import { CreateUserComponent } from './paginas/create-user/create-user.component';
+import { BuyFormModuleModule } from './componentes/buy-form-module/buy-form-module.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComunComponent,
     FooterComunComponent,
-    FormCreateUserComponent,
     TopButtonComponent,
     ExitButtonComponent,
-    LoginComponent,
-    CreateUserComponent,
     HomeCotizacionesComponent,
     MiCuentaComponent,
     MiPortfolioComponent,
@@ -68,14 +64,12 @@ import { LogoutButtonComponent } from './componentes/logout-button/logout-button
     ChooseResultComponent,
     ResetPassComponent,
     BodyLadingPageComponent,
-    LoginFormComponent,
     GetPassComponent,
     ResetPassStateComponent,
     VerifyCodeComponent,
     CotizationsTableComponent,
     NotFoundPageComponent,
     MyPortfolioComponent,
-    BuyFormComponent,
     SettingsComponent,
     MyAccountComponent,
     NotFoundComponent,
@@ -87,17 +81,25 @@ import { LogoutButtonComponent } from './componentes/logout-button/logout-button
     HeaderLandingComponent,
     NavbarComunComponent,
     GetNewPassComponent,
+    CreateUserComponent,
     VerifyRegisterComponent,
-    VerifyRegisterStateComponent,
     VerifyRegisterPageComponent,
+    VerifyRegisterPageComponent,
+    VerifyRegisterStateComponent,
     VerifyRegisterStatePageComponent,
-    LogoutButtonComponent
+    LogoutButtonComponent,
+    LoginComponent
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
-  ],
+    HttpClientModule,
+    AuthModule,
+    RegisterModule,
+    BuyFormModuleModule
+
+    ],
   providers: [
     CotizacionesServiceService
   ],

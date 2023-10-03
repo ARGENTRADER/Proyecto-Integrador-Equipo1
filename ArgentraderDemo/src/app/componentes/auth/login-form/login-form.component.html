@@ -1,0 +1,34 @@
+<div class="container-fluid mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <h2 class="text-center mb-4 text-white">Iniciar sesión</h2>
+      <form [formGroup]="loginForm">
+        <div class="mb-3">
+          <label for="correo" class="form-label text-white">Correo electrónico</label>
+          <input  type="email" formControlName="email" class="form-control" id="correo" placeholder="correo@ejemplo.com">
+          <div style="color:brown" *ngIf="email.invalid && (email.dirty || email.touched) && !email.errors?.['required']"class="alert">
+          "Ingrese un email válido, por favor."
+          </div>
+          </div>
+          <div style="color: brown" *ngIf="email.errors?.['required'] && email.touched">
+            Ingrese un email, por favor.
+          </div>  
+          <div class="mb-3">
+          <label for="contrasena" class="form-label text-white">Contraseña</label>
+          <input type="password" formControlName="password" class="form-control" id="contrasena" placeholder="Contraseña" required>
+          <div style="color:brown" *ngIf="(password.dirty || password.touched) && password.errors?.['required']"class="alert">
+            Ingrese su contraseña, por favor.
+          </div>
+        </div>
+        <div class="mb-3 div-forgot">
+          <a routerLink="/get-new-password" class="float-end a-forgot text-white">¿Olvidaste la contraseña?</a>
+        </div>
+        <div class="mb-3 div-forgot">
+          <button routerLink="/home" [disabled]="!loginForm.valid" type="submit" class="btn btn-light">Iniciar sesión</button>
+        </div>
+        <p class="text-center text-white">¿Aún no tenés usuario? <a routerLink="/create-user" class="text-white">Creá uno</a></p>
+      </form>
+    </div>
+  </div>
+</div>
+
