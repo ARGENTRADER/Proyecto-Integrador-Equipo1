@@ -36,8 +36,8 @@
             <div style="color:brown" *ngIf="(tipoDni.dirty || tipoDni.touched) && tipoDni.invalid "class="alert">
               Seleccione tipo de dni, por favor.
             </div>
-            <option value="Documento Nacional de Identidad" selected>D.N.I.</option>
-            <option value="Pasaporte">Pasaporte</option>
+            <option value="Documento Nacional de Identidad" selected>DNI</option>
+            <option value="Pasaporte">LC</option>
             <option value="Libreta Cívica">Libreta Cívica</option>
             <option value="Libreta de Enrolamiento">Libreta de Enrolamiento</option>
           </select>
@@ -83,7 +83,8 @@
           </div>
         </div>
         <div class="mb-3">
-          <button type="submit" [disabled]="!createUserForm.valid" class="btn btn-light div-forgot">Registrarse</button>
+          // eslint-disable-next-line @angular-eslint/template/elements-content
+          <button type="submit" [disabled]="!createUserForm.valid" (click)="SaveUser()" class="btn btn-light div-forgot">Registrarse</button>
         </div>
         <p class="text-center text-white">¿Ya tenés una cuenta? <a routerLink="/login" class="text-white">Iniciá sesión</a></p>
       </form>

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\POLITECNICO\\ARGENTRADER\\ARGENTRADER\\ARGENTRADER.csproj": {}
+    "C:\\Users\\Federico\\Documents\\GitHub\\Proyecto-Integrador-Equipo1\\Back\\ARGENTRADER\\ARGENTRADER.csproj": {}
   },
   "projects": {
-    "C:\\POLITECNICO\\ARGENTRADER\\ARGENTRADER\\ARGENTRADER.csproj": {
+    "C:\\Users\\Federico\\Documents\\GitHub\\Proyecto-Integrador-Equipo1\\Back\\ARGENTRADER\\ARGENTRADER.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\POLITECNICO\\ARGENTRADER\\ARGENTRADER\\ARGENTRADER.csproj",
+        "projectUniqueName": "C:\\Users\\Federico\\Documents\\GitHub\\Proyecto-Integrador-Equipo1\\Back\\ARGENTRADER\\ARGENTRADER.csproj",
         "projectName": "ARGENTRADER",
-        "projectPath": "C:\\POLITECNICO\\ARGENTRADER\\ARGENTRADER\\ARGENTRADER.csproj",
+        "projectPath": "C:\\Users\\Federico\\Documents\\GitHub\\Proyecto-Integrador-Equipo1\\Back\\ARGENTRADER\\ARGENTRADER.csproj",
         "packagesPath": "C:\\Users\\Federico\\.nuget\\packages\\",
-        "outputPath": "C:\\POLITECNICO\\ARGENTRADER\\ARGENTRADER\\obj\\",
+        "outputPath": "C:\\Users\\Federico\\Documents\\GitHub\\Proyecto-Integrador-Equipo1\\Back\\ARGENTRADER\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Federico\\AppData\\Roaming\\NuGet\\NuGet.Config",

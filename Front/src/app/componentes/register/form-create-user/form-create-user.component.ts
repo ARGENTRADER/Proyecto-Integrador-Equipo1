@@ -1,7 +1,11 @@
+
+
 /* eslint-disable @typescript-eslint/no-empty-function */
 /* eslint-disable @angular-eslint/no-empty-lifecycle-method */
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, ValidatorFn, Validators } from '@angular/forms';
+import { NewUserDto } from 'app/dtos/new-user-dto';
+import { UserServiceService } from 'app/services/user-service.service';
 
 @Component({
   selector: 'app-form-create-user',
@@ -44,10 +48,33 @@ export class FormCreateUserComponent implements OnInit {
     };
   }
 
-constructor(private formBuilder:FormBuilder){
+constructor(private formBuilder:FormBuilder, private service:UserServiceService){
   this.createUserForm.get('repeatedPassword')?.setValidators([Validators.required, this.passwordValidator()]);
 }
 
-  ngOnInit(): void {
+ 
+  ngOnInit(): void { 
+    
+   }
+  SaveUser(){
+  const userDto:NewUserDto | any= {
+    UserName:this.createUserForm.get('nombres')?.value,
+    UserLastName:this.createUserForm.get('apellidos')?.value,
+    UserBornDay:this.createUserForm.get('fechaNacimiento')?.value,
+    CredentialType: this.createUserForm.get('tipoDni')?.value,
+    UserDni: this.createUserForm.get('nroDni')?.value,
+    UserEmail:this.createUserForm.get('email')?.value,
+    Password:this.createUserForm.get('password')?.value,
   }
+    this.service.createUser(userDto).subscribe({
+    next: (v) =>console.log(v),
+    error:(e) =>console.error(e),
+    complete:() => console.info('complete')
+  })
+  this.createUserForm.reset();
+}
+
+
+
+
 }
